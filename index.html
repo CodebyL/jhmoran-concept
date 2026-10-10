@@ -233,6 +233,12 @@ footer a{color:var(--copper-l)}
  .sticky-call{display:flex;position:fixed;left:var(--s3);right:var(--s3);bottom:var(--s3);z-index:40;min-height:56px;box-shadow:0 12px 28px -8px rgba(0,0,0,.45)}
  footer{padding-bottom:120px}
 }
+
+/* contact balance */
+@media(min-width:900px){.c-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:stretch;gap:var(--s6)}
+.c-left{display:flex;flex-direction:column}.c-left .card-info{flex:1;display:flex;flex-direction:column}.c-left .card-info dl{flex:1;display:flex;flex-direction:column;justify-content:space-between}
+.c-right{display:flex;flex-direction:column}.c-right form.demo{flex:1;display:flex;flex-direction:column}.c-right .fgrid{flex:1}.c-right .field.full:last-child{display:flex;flex-direction:column}.c-right textarea{flex:1;min-height:110px}
+.c-right .radios{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))}.c-right .radios label{justify-content:center}}
 </style>
 </head>
 <body>
@@ -404,21 +410,25 @@ footer a{color:var(--copper-l)}
   <div>
    <span class="kick">Google reviews</span>
    <figure class="lead-q">
-    <blockquote>"We've been working with Keith for years now for all of our plumbing needs."</blockquote>
-    <figcaption><b>Joe C.</b>, Google review</figcaption>
+    <blockquote>Customers keep calling Keith back, year after year.</blockquote>
+    <figcaption>Theme from Google reviews</figcaption>
    </figure>
    <div class="keith"><span class="mono" aria-hidden="true">K</span><p>Customers name Keith in their reviews. Call and you talk to the person who does the work.</p></div>
   </div>
   <div class="q-list">
-   <figure><blockquote>"Professional, quick, neat, efficient work and a great value for his service."</blockquote><figcaption>Google review</figcaption></figure>
-   <figure><blockquote>"His experience gives me piece of mind that the repair is done right."</blockquote><figcaption>Google review</figcaption></figure>
+   <figure><blockquote>Neat, efficient work at a fair price.</blockquote><figcaption>Theme from Google reviews</figcaption></figure>
+   <figure><blockquote>Experience that gives people peace of mind.</blockquote><figcaption>Theme from Google reviews</figcaption></figure>
   </div>
  </div>
 </section>
 
 <section class="contact" id="contact">
  <div class="wrap c-grid">
-  <div class="card-info">
+  <div class="c-left">
+   <span class="kick">Request service</span>
+   <h2 class="h2">What is going on?</h2>
+   <p class="intro" style="margin-bottom:var(--s5)">A short description helps Keith come prepared.</p>
+   <div class="card-info">
    <div class="top"><span>Call during business hours</span><a href="tel:+16314256474">(631) 425-6474</a></div>
    <dl>
     <div><dt>Address</dt><dd>233 Nassau Rd<br>Huntington, NY 11743</dd></div>
@@ -426,10 +436,8 @@ footer a{color:var(--copper-l)}
     <div><dt>Services</dt><dd>Boilers, water heaters, leaks, toilets, shower cartridges, small jobs</dd></div>
    </dl>
   </div>
-  <div>
-   <span class="kick">Request service</span>
-   <h2 class="h2">What is going on?</h2>
-   <p class="intro" style="margin-bottom:var(--s5)">A short description helps Keith come prepared.</p>
+  </div>
+  <div class="c-right">
    <form class="demo" data-done="doneReq" novalidate>
     <div class="fgrid">
      <div class="field"><label for="r-name">Name</label><input type="text" id="r-name" autocomplete="name" required><span class="err-msg">Please add your name.</span></div>
@@ -437,7 +445,7 @@ footer a{color:var(--copper-l)}
      <div class="field full"><label for="r-addr">Street and town</label><input type="text" id="r-addr" autocomplete="street-address" required><span class="err-msg">Please add an address.</span></div>
      <div class="field full"><label for="r-issue">Issue</label><select id="r-issue" required><option value="">Choose one</option><option>No heat</option><option>Boiler maintenance</option><option>Boiler repair</option><option>Hot water heater</option><option>Leak</option><option>Toilet</option><option>Shower cartridge</option><option>Small job</option></select><span class="err-msg">Please choose an issue.</span></div>
      <div class="field full"><fieldset><legend>How soon?</legend>
-      <div class="radios"><label><input type="radio" name="when" value="asap" checked> As soon as possible</label><label><input type="radio" name="when" value="week"> This week</label><label><input type="radio" name="when" value="plan"> Planning ahead</label></div></fieldset></div>
+      <div class="radios"><label><input type="radio" name="when" value="asap" checked> Right away</label><label><input type="radio" name="when" value="week"> This week</label><label><input type="radio" name="when" value="plan"> Planning ahead</label></div></fieldset></div>
      <div class="field full"><label for="r-msg">Details</label><textarea id="r-msg" placeholder="What you noticed, pressure reading, how long it has been happening..."></textarea></div>
     </div>
     <button class="btn btn-navy" type="submit" style="margin-top:var(--s4)">Send request</button>
@@ -460,7 +468,7 @@ footer a{color:var(--copper-l)}
    <div><h3>Contact</h3><p><a href="tel:+16314256474">(631) 425-6474</a><br>233 Nassau Rd<br>Huntington, NY 11743</p></div>
    <div><h3>Hours</h3><p>Monday to Friday, closes 5 PM</p></div>
   </div>
-  <p class="disclaimer">Independent website concept designed by Lisette Colon. Not affiliated with or approved by JHMoran Plumbing and Heating. Address, hours, rating and review quotes are from the business's public Google listing, checked October 2026. Short service descriptions are written for this concept, service list to confirm with the owner. Drawings are illustrations. The "No heat? Check these first" flow is general guidance, not professional advice, and a sample feature. The request form is a demo; nothing is sent or saved.</p>
+  <p class="disclaimer">Independent website concept designed by Lisette Colon. Not affiliated with or approved by JHMoran Plumbing and Heating. Address, hours, rating and review themes are from the business's public Google listing, checked October 2026. Short service descriptions are written for this concept, service list to confirm with the owner. Drawings are illustrations. The "No heat? Check these first" flow is general guidance, not professional advice, and a sample feature. The request form is a demo; nothing is sent or saved.</p>
  </div>
 </footer>
 <a class="btn btn-copper sticky-call" href="tel:+16314256474">Call (631) 425-6474</a>
