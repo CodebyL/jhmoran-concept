@@ -3,504 +3,585 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JHMoran Plumbing and Heating (website concept)</title>
-<meta name="description" content="Website concept for JHMoran Plumbing and Heating of Huntington, NY: boiler maintenance and repair, hot water heaters, leaks, toilets, shower cartridges, small jobs and heat emergencies.">
-<meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>(function(){try{var d=document.documentElement;if(matchMedia&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window){d.classList.add('anim');setTimeout(function(){if(!window.__rv)d.classList.remove('anim')},2500)}}catch(e){}})();</script>
+<meta name="robots" content="noindex, nofollow">
+<title>JHMoran Plumbing and Heating | Boilers, Water Heaters &amp; Plumbing in Huntington, NY</title>
+<meta name="description" content="JHMoran Plumbing and Heating, 233 Nassau Rd, Huntington NY. Boiler maintenance and repair, hot water heaters, leaks, toilets and shower cartridges. 4.8 from 50 Google reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-boiler-room.jpg">
 <style>
-:root{
- --navy:#0E1B2E;--navy-2:#16273F;--navy-3:#223857;--copper:#B8692F;--copper-l:#E09A62;--copper-t:#8A4718;--copper-xl:#F6E3D3;
- --steam:#F6F4F0;--steam-2:#ECE8E1;--white:#fff;--ink:#0E1B2E;--muted:#4E5A6B;--line:#DCD6CC;--red:#A3261A;
- --s1:4px;--s2:8px;--s3:16px;--s4:24px;--s5:32px;--s6:48px;--s7:72px;--s8:112px;
- --wrap:1200px;--r:10px;
- --display:"Sora",system-ui,sans-serif;--body:"Mulish",system-ui,sans-serif;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
-body{margin:0;font-family:var(--body);font-size:18px;line-height:1.65;color:var(--ink);background:var(--steam);overflow-x:hidden}
-a{color:var(--copper-t)}
-h1,h2,h3{font-family:var(--display);margin:0;line-height:1.12}
-p{margin:0 0 var(--s3)}
-:focus-visible{outline:3px solid var(--copper);outline-offset:3px;border-radius:4px}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--s5)}
-.concept{background:#08111E;color:#E2E7EE;font-size:14px;text-align:center;padding:var(--s2) var(--s3);line-height:1.45}
-.concept a{color:var(--copper-l);font-weight:700}
+:root{--m:#9B1C22;--m-d:#7D141A;--ink:#1D1D1F;--ink2:#26262A;--paper:#F6F6F5;--sand:#F1EDE6;--line:#E4E3E0;--mute:#6C6C70;--wrap:1120px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:auto}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--ink);background:#fff;font-size:16px;line-height:1.65;overflow-x:clip}
+img{max-width:100%;display:block}a{color:inherit}
+h1,h2,h3{font-family:'Hanken Grotesk',system-ui,sans-serif;line-height:1.14;letter-spacing:-.015em;font-weight:600;text-wrap:balance}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+[id]{scroll-margin-top:calc(var(--hh,72px) + 14px)}
+[hidden]{display:none!important}
+:focus-visible{outline:2.5px solid var(--m);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--m);color:#fff;padding:10px 16px;z-index:100}.skip:focus{left:12px}
+.eb{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--m)}
+.eb.dk{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:0 24px;border-radius:999px;background:var(--ink);color:#fff;font:700 12.5px/1 'DM Sans',sans-serif;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;border:0;cursor:pointer;transition:background .2s,transform .2s}
+.btn:hover{background:#000;transform:translateY(-1px)}
+.btn.m{background:var(--m)}.btn.m:hover{background:var(--m-d)}
+.btn.w{background:#fff;color:var(--ink)}
+.two{color:#A7A39C}
+.center{text-align:center}
+.lead{color:var(--mute);font-size:14.5px;max-width:58ch}
+.center .lead{margin-inline:auto}
 
-header{position:sticky;top:0;z-index:30;background:var(--steam);border-bottom:1px solid var(--line)}
-.hbar{display:flex;align-items:center;gap:var(--s4);min-height:78px}
-.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);margin-right:auto}
-.logo b{font-family:var(--display);font-weight:800;font-size:20px;letter-spacing:-.02em;display:block;line-height:1.1}
-.logo small{display:block;font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--copper-t)}
-nav ul{display:flex;gap:var(--s1);list-style:none;margin:0;padding:0}
-nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;color:var(--ink);text-decoration:none;font-weight:700;font-size:16px;border-radius:8px}
-nav a:hover{background:var(--steam-2)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 24px;border-radius:var(--r);font-family:var(--display);font-weight:700;font-size:16.5px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .2s,transform .2s}
-.btn:hover{transform:translateY(-1px)}
-.btn-copper{background:var(--copper);color:#fff}
-.btn-copper:hover{background:var(--copper-t)}
-.btn-navy{background:var(--navy);color:#fff}
-.btn-navy:hover{background:var(--navy-3)}
-.btn-line{border-color:rgba(255,255,255,.55);color:#fff;background:transparent}
-.btn-line:hover{background:rgba(255,255,255,.08)}
-.btn-ghost{border-color:var(--navy);color:var(--navy);background:transparent}
-.hcall{min-height:46px;font-size:15.5px;padding:0 18px}
-.menu-btn{display:none;width:48px;height:48px;border:2px solid var(--line);background:#fff;border-radius:var(--r);cursor:pointer}
-.menu-btn svg{display:block;margin:auto}
+/* util + header */
+.util{background:#111;color:#E9E9E9;font-size:12.5px}
+.util .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:34px}
+.util a{text-decoration:none;font-weight:600}
+.util .r{display:flex;gap:20px}
+header.top{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);transition:box-shadow .3s}
+header.top.is-stuck{box-shadow:0 8px 22px rgba(0,0,0,.08)}
+header.top .bar{display:flex;align-items:stretch;max-width:1240px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px))}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto;padding-block:10px}
+.seal{width:52px;height:52px;border-radius:50%;background:var(--m);color:#fff;display:grid;place-items:center;font:700 15px 'Hanken Grotesk',sans-serif;letter-spacing:.02em;box-shadow:0 0 0 3px #fff,0 0 0 4px var(--m)}
+.brand b{display:block;font:700 17px/1.1 'Hanken Grotesk',sans-serif}
+.brand small{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-top:3px}
+nav.main{display:flex;align-items:center;gap:26px;margin-right:30px}
+nav.main a{text-decoration:none;font-size:13.5px;font-weight:500;padding:6px 0;position:relative}
+nav.main a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--m);transform:scaleX(0);transition:transform .25s}
+nav.main a:hover::after,nav.main a[aria-current]::after{transform:scaleX(1)}
+.callblk{display:flex;align-items:center;gap:12px;background:var(--m);color:#fff;text-decoration:none;padding:0 max(24px,env(safe-area-inset-right,0px)) 0 24px;transition:background .2s}
+.callblk:hover{background:var(--m-d)}
+.callblk .ic{width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(255,255,255,.5);display:grid;place-items:center}
+.callblk small{display:block;font-size:11px;opacity:.85;line-height:1.2}
+.callblk b{display:block;font-size:17px;line-height:1.2;white-space:nowrap}
+.menubtn{display:none;align-items:center;gap:8px;height:42px;margin:auto 12px auto 0;padding:0 14px;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--ink);font:700 12.5px 'DM Sans',sans-serif;text-transform:uppercase;letter-spacing:.05em;cursor:pointer}
+.menubtn .bars{width:16px;height:10px;position:relative}.menubtn .bars::before,.menubtn .bars::after{content:"";position:absolute;left:0;right:0;height:2px;background:currentColor;transition:transform .25s,top .25s}
+.menubtn .bars::before{top:0}.menubtn .bars::after{top:8px}
+.menubtn.is-open .bars::before{top:4px;transform:rotate(45deg)}.menubtn.is-open .bars::after{top:4px;transform:rotate(-45deg)}
+#menu{position:absolute;left:0;right:0;top:100%;background:#fff;border-top:1px solid var(--line);padding:8px max(20px,env(safe-area-inset-left,0px)) 20px;box-shadow:0 18px 30px rgba(0,0,0,.1)}
+#menu a{display:block;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;font-size:16px;font-weight:500}
+#menu .btn{margin-top:14px;width:100%;border:0}
 
 /* hero */
-.hero{display:grid;grid-template-columns:1.05fr 1fr;min-height:620px}
-.hero-l{background:var(--navy);color:#fff;padding:var(--s7) var(--s6) var(--s7) max(var(--s5),calc((100vw - var(--wrap))/2 + var(--s5)));display:flex;flex-direction:column;justify-content:center}
-.hero-r{background:var(--steam-2);position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;padding:var(--s5) var(--s5) 0}
-.hero-r svg{width:100%;max-width:520px;height:auto;display:block}
-.tagline{font-weight:800;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--copper-l);margin-bottom:var(--s4)}
-h1{font-size:clamp(38px,4.6vw,66px);font-weight:800;letter-spacing:-.035em;line-height:1.04;margin-bottom:var(--s4)}
-.lede{font-size:20px;color:#C9D2DE;max-width:30em;margin-bottom:var(--s5)}
-.actions{display:flex;flex-wrap:wrap;gap:var(--s3)}
-.steam path{animation:steam 4.5s ease-in-out infinite;opacity:0}
-.steam path:nth-child(2){animation-delay:1.5s}.steam path:nth-child(3){animation-delay:3s}
-@keyframes steam{0%{opacity:0;transform:translateY(16px)}30%{opacity:.85}100%{opacity:0;transform:translateY(-34px)}}
-.needle{transform-origin:254px 272px;animation:needle 6s ease-in-out infinite}
-@keyframes needle{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(6deg)}}
-.flame{animation:flick .9s ease-in-out infinite alternate;transform-origin:center bottom;transform-box:fill-box}
-@keyframes flick{to{transform:scaleY(.82)}}
+.hero{background:var(--paper);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:30px;align-items:end;padding-top:64px}
+.hero .copy{padding-bottom:80px}
+.proof{display:flex;align-items:center;gap:12px}
+.proof .g{width:40px;height:40px;border-radius:50%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08);display:grid;place-items:center;font:700 18px 'DM Sans',sans-serif;color:#4285F4}
+.proof .s{color:var(--m);letter-spacing:2px;font-size:14px;line-height:1}
+.proof small{display:block;font-size:12px;color:var(--mute)}
+.hero h1{font-size:clamp(34px,4.4vw,54px);margin-top:22px;max-width:16ch}
+.hero p.sub{color:var(--mute);max-width:46ch;margin-top:18px;font-size:15.5px}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero .art{position:relative;justify-self:end;width:min(100%,500px);aspect-ratio:1/1.02}
+.hero .circ{position:absolute;left:4%;right:4%;top:0;aspect-ratio:1;border-radius:50%;background:var(--ink)}
+.hero .circ::before{content:"";position:absolute;inset:-14px;border-radius:50%;border:1.5px dashed rgba(155,28,34,.35)}
+.hero .ph{position:absolute;left:10%;right:10%;top:6%;aspect-ratio:1;border-radius:50%;overflow:hidden}
+.hero .ph img{width:100%;height:100%;object-fit:cover;object-position:40% 50%}
+.hero .badge{position:absolute;left:-6%;bottom:18%;background:#fff;border-radius:16px;padding:14px 18px;box-shadow:0 18px 40px rgba(0,0,0,.14);display:flex;gap:12px;align-items:center}
+.hero .badge .i{width:42px;height:42px;border-radius:50%;background:var(--m);color:#fff;display:grid;place-items:center;flex:none}
+.hero .badge b{display:block;font:700 15px 'Hanken Grotesk',sans-serif}.hero .badge span{font-size:12.5px;color:var(--mute)}
+.hero .badge2{left:auto;right:-2%;bottom:auto;top:16%}
+.book{background:#EDEDEB}
+.book .wrap{padding-block:26px 30px;text-align:center}
+.book h2{font-size:16px;font-weight:700}
+.bk{display:flex;justify-content:center;margin:14px auto 0;max-width:560px;background:#fff;border-radius:999px;padding:5px;box-shadow:0 4px 14px rgba(0,0,0,.05)}
+.bk select,.bk input{border:0;font:inherit;font-size:14px;padding:0 16px;min-height:44px;background:transparent;color:var(--ink);min-width:0}
+.bk select{flex:1.2;appearance:none;border-right:1px solid var(--line);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%231D1D1F' stroke-width='2.4'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 12px center;padding-right:32px;border-radius:999px 0 0 999px}
+.bk input{flex:1}
+.bk select:focus,.bk input:focus{outline:2px solid var(--m);outline-offset:-2px}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:16px}
+.chips span{background:#fff;border-radius:8px;padding:7px 12px;font-size:12.5px;font-weight:600;box-shadow:0 2px 6px rgba(0,0,0,.04)}
 
-/* proof */
-.gauges{background:#fff;border-bottom:1px solid var(--line)}
-.g-row{display:grid;grid-template-columns:repeat(4,1fr)}
-.g{display:flex;align-items:center;gap:var(--s3);padding:var(--s5) var(--s4);border-left:1px solid var(--line)}
-.g:first-child{border-left:0;padding-left:0}
-.g svg{flex:none}
-.g b{display:block;font-family:var(--display);font-size:22px;letter-spacing:-.02em;line-height:1.2}
-.g span{font-size:15.5px;color:var(--muted);line-height:1.35;display:block}
+/* intro */
+.intro{padding-block:90px 70px}
+.intro h2{font-size:clamp(28px,3.4vw,40px);max-width:24ch;margin-top:12px}
+.intro .btn{margin-top:22px}
+.wide{margin-top:34px;border-radius:6px;overflow:hidden;aspect-ratio:2.05/1}
+.wide img{width:100%;height:100%;object-fit:cover}
 
-section{padding:var(--s8) 0}
-.kick{font-weight:800;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--copper-t);margin-bottom:var(--s3);display:block}
-.h2{font-size:clamp(30px,3.4vw,46px);font-weight:800;letter-spacing:-.03em;margin-bottom:var(--s3)}
-.intro{font-size:19px;color:var(--muted);max-width:34em}
+/* split */
+.split{background:var(--paper);padding-block:90px}
+.split .grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.split .ph{position:relative;border-radius:6px;overflow:hidden;aspect-ratio:4/4.4}
+.split .ph img{width:100%;height:100%;object-fit:cover}
+.split .ph::after{content:"";position:absolute;inset:auto 0 0 0;height:45%;background:linear-gradient(0deg,rgba(0,0,0,.75),transparent)}
+.split .ph p{position:absolute;left:24px;right:24px;bottom:22px;color:#fff;font:600 22px/1.3 'Hanken Grotesk',sans-serif;z-index:1}
+.split .ph p mark{background:var(--m);color:#fff;padding:0 6px}
+.split h2{font-size:clamp(28px,3.4vw,40px);margin-top:12px}
+.split .lead{margin-top:16px}
+.checks{list-style:none;padding:0;margin-top:22px;display:grid;gap:12px}
+.checks li{display:flex;gap:10px;align-items:center;font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.checks li::before{content:"";flex:none;width:20px;height:20px;border-radius:50%;background:var(--m) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.4'%3E%3Cpath d='M6 12l4 4 8-8'/%3E%3C/svg%3E") center/12px no-repeat}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:70px}
+.cols div{border-top:1px solid #D5D3CF;padding-top:16px}
+.cols .n{font-size:13px;font-weight:600}
+.cols h3{font-size:16px;margin-top:26px}
+.cols p{font-size:13.5px;color:var(--mute);margin-top:6px}
 
-/* pipe run services */
-.run-head{text-align:center;margin:0 auto var(--s7);max-width:720px}
-.run-head .intro{margin:0 auto}
-.run{position:relative;list-style:none;margin:0;padding:0}
-.run::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:14px;margin-left:-7px;background:linear-gradient(90deg,#8A4718,#E09A62 40%,#B8692F 70%,#7A3E14);border-radius:7px}
-.run li{position:relative;display:grid;grid-template-columns:1fr 80px 1fr;align-items:center;margin-bottom:calc(-1 * var(--s4))}
-.run li:last-child{margin-bottom:0}
-.run .fit{grid-column:2;justify-self:center;width:44px;height:44px;border-radius:8px;background:var(--navy);border:4px solid var(--steam);box-shadow:0 0 0 3px var(--copper);position:relative;z-index:1}
-.run .card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:var(--s4);position:relative}
-.run .card::before{content:"";position:absolute;top:50%;width:40px;height:8px;margin-top:-4px;background:var(--copper)}
-.run li:nth-child(odd) .card{grid-column:1;grid-row:1;margin-right:var(--s2)}
-.run li:nth-child(odd) .card::before{right:-48px}
-.run li:nth-child(even) .card{grid-column:3;grid-row:1;margin-left:var(--s2)}
-.run li:nth-child(even) .card::before{left:-48px}
-.run li .fit{grid-row:1}
-.run h3{font-size:21px;font-weight:700;margin-bottom:var(--s1);letter-spacing:-.01em}
-.run p{margin:0;color:var(--muted);font-size:16.5px}
-.run .hot .card{border-color:var(--copper);background:var(--copper-xl)}
-.run .hot h3{color:var(--red)}
+/* dark banner */
+.dbanner{padding-block:70px}
+.dbanner .box{position:relative;overflow:hidden;border-radius:6px;background:radial-gradient(120% 140% at 50% 120%,#3A2628 0%,#1A1A1C 55%,#121214 100%);color:#fff;text-align:center;padding:56px 24px}
+.dbanner .box::before,.dbanner .box::after{content:"";position:absolute;left:50%;top:100%;border-radius:50%;border:1px solid rgba(255,255,255,.06);transform:translate(-50%,-50%)}
+.dbanner .box::before{width:900px;height:900px}.dbanner .box::after{width:600px;height:600px}
+.dbanner small{display:block;font-size:12.5px;font-weight:600;position:relative}
+.dbanner h2{font-size:clamp(26px,3.4vw,40px);text-transform:uppercase;letter-spacing:-.01em;max-width:24ch;margin:12px auto 0;position:relative;font-weight:700}
+.dbanner .acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:24px;position:relative}
+.btn.line{background:transparent;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.4)}
 
-/* troubleshooter */
-.ts{background:var(--navy);color:#fff}
-.ts-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:var(--s7);align-items:start}
-.ts .kick{color:var(--copper-l)}
-.ts .intro{color:#C9D2DE}
-.gas{margin-top:var(--s5);background:#3A1611;border-left:5px solid #F07A5A;padding:var(--s3) var(--s4);border-radius:6px;font-size:16.5px;color:#FBE4DD}
-.gas b{color:#fff}
-.guidance{font-size:14.5px;color:#AEB9C7;margin-top:var(--s4);border-left:3px solid var(--copper);padding-left:12px}
-.panel{background:var(--navy-2);border:1px solid var(--navy-3);border-radius:16px;padding:var(--s5)}
-.track{display:flex;align-items:center;gap:0;margin-bottom:var(--s5)}
-.track span{flex:1;height:8px;background:var(--navy-3);border-radius:4px;margin-right:6px;transition:background .3s}
-.track span.on{background:var(--copper-l)}
-.track span:last-child{margin-right:0}
-.step{display:none}
-.step.active{display:grid;grid-template-columns:120px 1fr;gap:var(--s4);align-items:start}
-.step .ill{background:var(--steam);border-radius:12px;padding:var(--s2)}
-.step .ill svg{display:block;width:100%;height:auto}
-.step .count{font-size:14px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--copper-l);margin-bottom:var(--s2)}
-.step h3{font-size:26px;margin-bottom:var(--s3);letter-spacing:-.02em}
-.step ul{margin:0 0 var(--s4);padding-left:20px;color:#DCE3EB;font-size:17px}
-.step li{margin-bottom:6px}
-.choices{display:flex;flex-wrap:wrap;gap:var(--s2)}
-.choices .btn{min-height:50px;font-size:15.5px}
-.result{display:none}
-.result.active{display:block}
-.result h3{font-size:28px;margin-bottom:var(--s3)}
-.result p{color:#DCE3EB}
-.result .actions{margin-top:var(--s4)}
-.back{background:none;border:0;color:var(--copper-l);font:700 15px var(--body);min-height:44px;padding:0;cursor:pointer;margin-top:var(--s3);text-decoration:underline;text-underline-offset:3px}
+/* services */
+.svc{padding-block:40px 80px}
+.svc h2{font-size:clamp(28px,3.4vw,40px);margin-top:10px}
+.svc .lead{margin-top:12px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.card{border:1px solid var(--line);border-radius:6px;padding:10px 10px 24px;background:#fff;display:flex;flex-direction:column}
+.card .ph{aspect-ratio:16/10;overflow:hidden;border-radius:3px}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.card:hover .ph img{transform:scale(1.05)}
+.card h3{font-size:19px;margin:20px 10px 0}
+.card p{font-size:13.5px;color:var(--mute);margin:8px 10px 0}
+.card ul{list-style:none;padding:0;margin:14px 10px 0;display:grid;gap:6px}
+.card li{font-size:13px;color:#4A4A4E;display:flex;gap:8px;align-items:center}
+.card li::before{content:"✓";color:var(--ink);font-weight:700;font-size:12px}
+.slider{margin-top:50px;position:relative}
+.strack{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 36px)/3.3);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-left:max(20px,calc((100vw - var(--wrap))/2 - 60px))}
+.strack::-webkit-scrollbar{display:none}
+.tile{position:relative;scroll-snap-align:start;aspect-ratio:1/0.96;border-radius:6px;overflow:hidden;color:#fff;text-decoration:none}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.tile:hover img{transform:scale(1.06)}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,0) 50%)}
+.tile b{position:absolute;left:18px;bottom:16px;z-index:1;font:600 20px 'Hanken Grotesk',sans-serif}
+.dots{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:20px}
+.dots button{width:36px;height:36px;border-radius:50%;border:0;background:var(--m);color:#fff;display:grid;place-items:center;cursor:pointer}
+.dots .bar{display:flex;gap:6px}.dots .bar i{width:18px;height:3px;border-radius:2px;background:#E8C9CB}.dots .bar i.on{background:var(--m);width:30px}
 
-/* keith + reviews */
-.rv-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:var(--s7);align-items:start}
-.lead-q{margin:0;position:relative;padding-top:var(--s6)}
-.lead-q::before{content:"";position:absolute;top:0;left:0;width:72px;height:8px;background:var(--copper);border-radius:4px}
-.lead-q blockquote{margin:0 0 var(--s4);font-family:var(--display);font-weight:700;font-size:clamp(28px,3vw,40px);line-height:1.2;letter-spacing:-.025em}
-figcaption{font-size:16px;color:var(--muted)}
-figcaption b{color:var(--ink)}
-.q-list{display:grid;gap:var(--s4)}
-.q-list figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:var(--s4) var(--s4) var(--s4) var(--s6);position:relative}
-.q-list figure::before{content:"";position:absolute;left:var(--s4);top:var(--s4);bottom:var(--s4);width:4px;background:var(--copper-l);border-radius:2px}
-.q-list blockquote{margin:0 0 var(--s2);font-size:20px;font-weight:600;line-height:1.45}
-.keith{margin-top:var(--s6);display:flex;gap:var(--s4);align-items:center;background:var(--steam-2);border-radius:var(--r);padding:var(--s4)}
-.keith .mono{flex:none;width:64px;height:64px;border-radius:50%;background:var(--navy);color:var(--copper-l);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:26px}
-.keith p{margin:0;font-size:17px}
+/* stats */
+.stats{background:var(--paper);padding-block:80px}
+.stats .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}
+.sgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.sgrid div{background:#fff;padding:60px 18px 18px;min-height:170px;display:flex;flex-direction:column;justify-content:flex-end}
+.sgrid b{font:600 clamp(36px,4.2vw,52px)/1 'Hanken Grotesk',sans-serif;letter-spacing:-.03em}
+.sgrid span{font-size:13px;font-weight:500;margin-top:8px}
+.stats h2{font-size:clamp(26px,3vw,36px);margin-top:10px}
+.stats .lead{margin-top:14px}
+.stats h3{font-size:16px;margin-top:40px}
+.stats .lk{display:inline-block;margin-top:14px;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--m)}
 
+/* no heat */
+.nh{background:var(--sand);padding-block:90px}
+.nh .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.nh h2{font-size:clamp(28px,3.4vw,40px);margin-top:10px}
+.nh .lead{margin-top:14px}
+.gas{margin-top:22px;background:#fff;border-left:4px solid var(--m);padding:14px 18px;font-size:14.5px}
+.gas b{color:var(--m)}
+.nh .fine{font-size:12.5px;color:var(--mute);margin-top:14px}
+.panel{background:var(--ink);color:#fff;border-radius:8px;padding:30px;position:relative;overflow:hidden;min-height:400px}
+.panel .bgph{position:absolute;inset:0;opacity:.14}.panel .bgph img{width:100%;height:100%;object-fit:cover}
+.panel>*:not(.bgph){position:relative}
+.ptrack{display:flex;gap:6px}.ptrack i{flex:1;height:4px;border-radius:2px;background:rgba(255,255,255,.18);transition:background .3s}.ptrack i.on{background:#E25A60}
+.step{margin-top:26px}
+.step .count{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#E9A7AA;font-weight:700}
+.step h3{font-size:26px;margin-top:6px}
+.step ul{margin-top:14px;padding-left:20px;display:grid;gap:8px;color:#DCDCDC;font-size:15px}
+.choices{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.back{margin-top:14px;background:none;border:0;color:#BDBDBD;font:600 13px 'DM Sans',sans-serif;text-decoration:underline;cursor:pointer;padding:6px 0}
+.step.done h3{color:#fff}
+.step-in{animation:stepIn .45s cubic-bezier(.2,.7,.2,1)}
+@keyframes stepIn{from{opacity:0;transform:translateX(18px)}to{opacity:1;transform:none}}
+
+/* why */
+.why{padding-block:90px}
+.why h2{font-size:clamp(28px,3.4vw,40px);margin-top:10px}
+.why .lead{margin-top:12px}
+.why .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:40px;align-items:stretch}
+.why .ph{border-radius:6px;overflow:hidden;min-height:380px;position:relative}
+.why .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.why .tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.why .t{background:var(--ink2);color:#fff;border-radius:6px;padding:22px 18px;display:flex;flex-direction:column}
+.why .t svg{color:#fff;opacity:.9}
+.why .t h3{font-size:16px;margin-top:auto;padding-top:34px}
+.why .t p{font-size:12.5px;color:#AFAFB3;margin-top:8px}
+.marquee{background:var(--ink);color:#fff;overflow:hidden;padding-block:20px;white-space:nowrap}
+.marquee .row{display:inline-flex;gap:28px;font:500 22px 'Hanken Grotesk',sans-serif;padding-right:28px}
+.marquee .row i{font-style:normal;color:#777}
+@media (prefers-reduced-motion:no-preference){.marquee .row{animation:mq 38s linear infinite}}
+@keyframes mq{to{transform:translateX(-100%)}}
+
+/* reviews */
+.rv{padding-block:90px}
+.rv h2{font-size:clamp(28px,3.4vw,40px);margin-top:10px}
+.rvg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.rvc{border:1px solid var(--line);border-radius:6px;padding:22px;display:flex;flex-direction:column}
+.rvc .top{display:flex;justify-content:space-between;align-items:center}
+.rvc .s{color:#F5B301;letter-spacing:2px}
+.rvc .g{font-weight:700;color:#4285F4}
+.rvc blockquote{font-size:14.5px;color:#3D3D41;margin-top:12px;flex:1}
+.rvc .who{display:flex;align-items:center;gap:10px;margin-top:18px;font-size:13px}
+.rvc .who i{width:30px;height:30px;border-radius:50%;background:var(--m);color:#fff;display:grid;place-items:center;font-style:normal;font-weight:700}
+.rv .more{margin-top:28px;display:flex;justify-content:center}
+.topics{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:16px}
+.topics span{border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:12.5px;color:#4A4A4E}
+
+/* faq */
+.faq{padding-block:20px 90px}
+.faq .grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px}
+.faq h2{font-size:clamp(28px,3.4vw,40px);margin-top:10px}
+.faq .lead{margin-top:14px}
+.qa{border-bottom:1px solid var(--line)}
+.qa button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;background:none;border:0;padding:18px 0;font:600 15px 'DM Sans',sans-serif;color:var(--ink);cursor:pointer}
+.qa button i{font-style:normal;font-size:20px;transition:transform .3s}
+.qa button[aria-expanded="true"] i{transform:rotate(45deg)}
+.qa .a{padding:0 0 18px;font-size:14.5px;color:var(--mute)}
+
+.faq .grid>div:first-child{display:flex;flex-direction:column;align-items:flex-start}
+.ask{margin-top:auto;align-self:stretch;background:var(--m);color:#fff;border-radius:8px;padding:24px;display:grid;gap:6px;justify-items:start}
+.ask b{font:600 20px 'Hanken Grotesk',sans-serif}.ask span{color:#F3D3D5;font-size:14.5px;margin-bottom:10px}
+@media (max-width:1040px){.ask{margin-top:26px}}
 /* contact */
-.contact{background:#fff;border-top:1px solid var(--line)}
-.c-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:var(--s7);align-items:start}
-.card-info{border:1px solid var(--line);border-radius:16px;overflow:hidden}
-.card-info .top{background:var(--navy);color:#fff;padding:var(--s4)}
-.card-info .top a{color:#fff;font-family:var(--display);font-weight:800;font-size:30px;text-decoration:none;letter-spacing:-.02em}
-.card-info .top span{display:block;color:#AEB9C7;font-size:15px}
-.card-info dl{margin:0;padding:var(--s2) var(--s4) var(--s4)}
-.card-info dl div{padding:var(--s3) 0;border-bottom:1px solid var(--line)}
-.card-info dl div:last-child{border-bottom:0}
-.card-info dt{font-size:13.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--copper-t)}
-.card-info dd{margin:4px 0 0;font-size:18px}
-.small{font-size:15px;color:var(--muted)}
-form{background:var(--steam);border:1px solid var(--line);border-radius:16px;padding:var(--s5)}
-.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s4)}
-.field{display:flex;flex-direction:column;gap:6px}
-.field.full{grid-column:1/-1}
-.field > label,.field legend{font-weight:700;font-size:16px}
-.field fieldset{border:0;margin:0;padding:0}
-input[type=text],input[type=tel],select,textarea{font:inherit;font-size:17px;min-height:52px;padding:12px 14px;border:2px solid #C9C2B6;border-radius:8px;background:#fff;color:var(--ink);width:100%}
-textarea{min-height:110px;resize:vertical}
-input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--copper);outline-offset:1px;border-color:var(--navy)}
-.radios{display:flex;flex-wrap:wrap;gap:var(--s2);margin-top:6px}
-.radios label{display:flex;align-items:center;gap:8px;min-height:48px;padding:0 14px;border:2px solid #C9C2B6;border-radius:8px;background:#fff;cursor:pointer;font-weight:600;font-size:16px}
-.radios input{width:20px;height:20px;accent-color:var(--copper)}
-.radios label:has(input:checked){border-color:var(--navy)}
-.err-msg{display:none;color:var(--red);font-size:14px;font-weight:700}
-.field.err input,.field.err select,.field.err textarea{border-color:var(--red)}
-.field.err .err-msg{display:block}
-.demo-note{font-size:14px;color:var(--muted);margin:var(--s3) 0 0}
-.done{background:var(--steam);border:1px solid var(--line);border-top:6px solid var(--copper);border-radius:16px;padding:var(--s6) var(--s5)}
-.done h3{font-size:28px;margin-bottom:var(--s2)}
+.contact{display:grid;grid-template-columns:1fr 1fr;background:var(--paper)}
+.contact .ph{position:relative;min-height:560px}
+.contact .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.contact .ph .info{position:absolute;left:24px;right:24px;bottom:24px;background:rgba(255,255,255,.95);border-radius:8px;padding:18px 20px;display:grid;gap:6px;font-size:14px}
+.contact .ph .info b{font:700 16px 'Hanken Grotesk',sans-serif}
+.contact .fm{padding:64px max(20px,calc((100vw - var(--wrap))/2 + 20px)) 64px 56px}
+.contact h2{font-size:clamp(28px,3.2vw,38px);margin-top:10px}
+.f{margin-top:14px}
+.f label{display:block;font-size:13px;font-weight:600;margin-bottom:6px}
+.f label em{font-style:normal;color:var(--mute);font-weight:400}
+.f input,.f select,.f textarea{width:100%;font:inherit;font-size:15px;border:1px solid #DAD8D4;border-radius:6px;padding:11px 14px;min-height:46px;background:#fff;color:var(--ink);transition:border-color .2s}
+.f select{appearance:none;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%231D1D1F' stroke-width='2.4'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 14px center;padding-right:36px}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:var(--m)}
+.f textarea{min-height:100px;resize:vertical}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+.req{font-size:12.5px;color:var(--mute);margin-top:12px}
+.err{margin-top:10px;color:var(--m);font-weight:600;font-size:14px}
+.contact button[type=submit]{width:100%;margin-top:16px;min-height:50px}
+.contact button[disabled]{opacity:.75;cursor:progress}
+.ok{margin-top:14px;background:#fff;border:1px solid #E7C4C6;border-left:4px solid var(--m);border-radius:6px;padding:14px 16px;font-size:14.5px}
+.ok:focus{outline:none}
 
-footer{background:var(--navy);color:#C9D2DE;padding:var(--s7) 0}
-.f-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:var(--s6)}
-footer h3{color:#fff;font-size:18px;margin-bottom:var(--s3)}
-footer a{color:var(--copper-l)}
-.disclaimer{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid rgba(255,255,255,.14);font-size:14px;color:#AEB9C7}
-.sticky-call{display:none}
+/* footer */
+footer{background:#141416;color:#fff;padding-top:64px}
+footer .grid{display:grid;grid-template-columns:1.4fr 1.2fr .8fr .9fr;gap:40px}
+footer .seal{width:84px;height:84px;font-size:22px;box-shadow:0 0 0 3px #141416,0 0 0 5px var(--m)}
+footer p{color:#A9A9AD;font-size:13.5px;margin-top:16px;max-width:34ch}
+footer h4{font:600 14px 'Hanken Grotesk',sans-serif;margin-bottom:14px}
+footer ul{list-style:none;padding:0;display:grid;gap:8px}
+footer li,footer ul a{color:#A9A9AD;font-size:13.5px;text-decoration:none}
+footer ul a:hover{color:#fff}
+footer .bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;border-top:1px solid #2A2A2E;margin-top:50px;padding-block:18px;font-size:12px;color:#7D7D82}
+footer .bot a{color:#A9A9AD;text-decoration:none}
+.concept-note{background:#0B0B0C;color:#9a9a9a;font:12px/1.4 system-ui,sans-serif;text-align:center;padding:10px 16px}
+.mbar{display:none}
 
-@media (max-width:1060px){
- .hero{grid-template-columns:1fr;min-height:0}
- .hero-l{padding:var(--s7) var(--s5)}
- .hero-r{padding-top:var(--s5)}
- .g-row{grid-template-columns:1fr 1fr}
- .g{padding:var(--s4) var(--s3)}
- .g:nth-child(3){border-left:0;padding-left:0}
- .g:nth-child(-n+2){border-bottom:1px solid var(--line)}
- .ts-grid,.rv-grid,.c-grid{grid-template-columns:1fr;gap:var(--s5)}
- .f-grid{grid-template-columns:1fr 1fr}
+/* motion */
+@media (prefers-reduced-motion:no-preference){
+ .anim .hero .proof,.anim .hero h1,.anim .hero .sub,.anim .hero .acts{animation:up .8s cubic-bezier(.2,.7,.2,1) both}
+ .anim .hero .proof{animation-delay:.15s}.anim .hero h1{animation-delay:.25s}.anim .hero .sub{animation-delay:.4s}.anim .hero .acts{animation-delay:.52s}
+ .anim .hero .circ{animation:grow 1.1s cubic-bezier(.2,.7,.2,1) .1s both}
+ .anim .hero .ph{animation:iris 1.3s cubic-bezier(.7,0,.2,1) .4s both}
+ .anim .hero .ph img{animation:settle 2.2s cubic-bezier(.2,.7,.2,1) .4s both}
+ .anim .hero .badge{animation:pop .7s cubic-bezier(.2,.9,.3,1.2) 1.1s both}.anim .hero .badge2{animation-delay:1.3s}
+ .anim [data-rv]{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1) var(--d,0s),transform .7s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
+ .anim [data-rv].in{opacity:1;transform:none}
+ .anim [data-rv="iris"]{opacity:1;transform:none;clip-path:circle(0% at 50% 50%);transition:clip-path 1.3s cubic-bezier(.7,0,.2,1) var(--d,0s)}
+ .anim [data-rv="iris"].in{clip-path:circle(75% at 50% 50%)}
+ @keyframes up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+ @keyframes grow{from{transform:scale(.6);opacity:0}to{transform:none;opacity:1}}
+ @keyframes iris{from{clip-path:circle(0% at 50% 50%)}to{clip-path:circle(50% at 50% 50%)}}
+ @keyframes settle{from{transform:scale(1.25)}to{transform:none}}
+ @keyframes pop{from{opacity:0;transform:translateY(14px) scale(.9)}to{opacity:1;transform:none}}
 }
-@media (max-width:860px){
- .menu-btn{display:block}
- nav{position:absolute;left:0;right:0;top:100%;background:var(--steam);border-bottom:1px solid var(--line);display:none;padding:var(--s3) var(--s4) var(--s4)}
- nav.open{display:block}
- nav ul{flex-direction:column}
- nav a{font-size:18px}
- .run::before{left:22px}
- .run li{grid-template-columns:44px 1fr;gap:var(--s4);margin-bottom:var(--s3)}
- .run li .fit{grid-column:1}
- .run li:nth-child(odd) .card,.run li:nth-child(even) .card{grid-column:2;margin:0}
- .run li:nth-child(odd) .card::before,.run li:nth-child(even) .card::before{left:-28px;right:auto;width:28px}
- .run .fit{justify-self:start}
- .run-head{text-align:left;margin-left:0}
+
+/* responsive */
+@media (max-width:1040px){
+ nav.main{display:none}.menubtn{display:inline-flex}
+ .callblk small{display:none}.callblk{padding:0 16px}
+ .hero .wrap{grid-template-columns:1fr;padding-top:44px}
+ .hero .copy{padding-bottom:10px}
+ .hero .art{justify-self:center;width:min(100%,440px);margin-bottom:-20px}
+ .split .grid,.stats .grid,.nh .grid,.faq .grid{grid-template-columns:1fr;gap:40px}
+ .cards{grid-template-columns:1fr 1fr}
+ .strack{grid-auto-columns:42%}
+ .why .grid{grid-template-columns:1fr}
+ .rvg{grid-template-columns:1fr 1fr}
+ .contact{grid-template-columns:1fr}.contact .ph{min-height:360px}
+ .contact .fm{padding:56px max(20px,env(safe-area-inset-left,0px))}
+ footer .grid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:640px){
- body{font-size:17px}
- .wrap{padding:0 var(--s3)}
- section{padding:var(--s7) 0}
- .hero-l{padding:var(--s6) var(--s3)}
- .hcall{display:none}
- .actions .btn{flex:1 1 100%}
- .g-row{grid-template-columns:1fr}
- .g,.g:nth-child(3){border-left:0;padding:var(--s3) 0;border-bottom:1px solid var(--line)}
- .g:last-child{border-bottom:0}
- .panel{padding:var(--s4)}
- .step.active{grid-template-columns:1fr}
- .step .ill{max-width:140px}
- .choices .btn{flex:1 1 100%}
- .fgrid{grid-template-columns:1fr}
- form,.done{padding:var(--s4)}
- .q-list figure{padding-left:var(--s5)}
- .q-list figure::before{left:var(--s3)}
- .f-grid{grid-template-columns:1fr}
- .sticky-call{display:flex;position:fixed;left:var(--s3);right:var(--s3);bottom:var(--s3);z-index:40;min-height:56px;box-shadow:0 12px 28px -8px rgba(0,0,0,.45)}
- footer{padding-bottom:120px}
+ .util .hide-s{display:none}
+ .brand b{font-size:15px}.brand small{display:none}.seal{width:44px;height:44px;font-size:13px}
+ .callblk b{display:none}.callblk{padding:0 14px}
+ .hero h1{font-size:34px}
+ .hero .badge{left:0;padding:10px 12px}.hero .badge2{right:0}
+ .bk{flex-direction:column;border-radius:16px}.bk select{border-right:0;border-bottom:1px solid var(--line);border-radius:12px 12px 0 0}.bk .btn{margin-top:4px}
+ .intro,.split,.why,.rv,.nh,.stats{padding-block:64px}
+ .cols{grid-template-columns:1fr;gap:22px;margin-top:44px}
+ .cards,.rvg{grid-template-columns:1fr}
+ .strack{grid-auto-columns:76%}
+ .why .tiles{grid-template-columns:1fr 1fr}
+ .why .ph{min-height:280px}
+ .panel{padding:22px 18px}
+ .fr{grid-template-columns:1fr}
+ footer .grid{grid-template-columns:1fr}
+ footer{padding-bottom:70px}
+ .mbar{display:grid;grid-template-columns:1fr 1.25fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px max(12px,env(safe-area-inset-left,0px)) calc(10px + env(safe-area-inset-bottom,0px));background:rgba(255,255,255,.96);border-top:1px solid var(--line);transition:transform .3s;box-shadow:0 -6px 20px rgba(0,0,0,.06)}
+ .mbar a{display:flex;align-items:center;justify-content:center;min-height:46px;border-radius:999px;font:700 13px 'DM Sans',sans-serif;text-transform:uppercase;letter-spacing:.05em;text-decoration:none}
+ .mbar .c{box-shadow:inset 0 0 0 1.5px var(--ink);color:var(--ink)}.mbar .e{background:var(--m);color:#fff}
+ .mbar.hide{transform:translateY(110%)}
 }
-
-/* contact balance */
-@media(min-width:900px){.c-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:stretch;gap:var(--s6)}
-.c-left{display:flex;flex-direction:column}.c-left .card-info{flex:1;display:flex;flex-direction:column}.c-left .card-info dl{flex:1;display:flex;flex-direction:column;justify-content:space-between}
-.c-right{display:flex;flex-direction:column}.c-right form.demo{flex:1;display:flex;flex-direction:column}.c-right .fgrid{flex:1}.c-right .field.full:last-child{display:flex;flex-direction:column}.c-right textarea{flex:1;min-height:110px}
-.c-right .radios{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))}.c-right .radios label{justify-content:center}}
 </style>
 </head>
 <body>
-<div class="concept">Website concept by <a href="https://www.lisettecolon.com">Lisette Colon</a>. A sample, not the official JHMoran Plumbing and Heating site.</div>
-
-<header>
- <div class="wrap hbar">
-  <a class="logo" href="#top" aria-label="JHMoran Plumbing and Heating, home">
-   <svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="10" fill="#0E1B2E"/><path d="M12 8V26a6 6 0 0 0 6 6H34" stroke="#E09A62" stroke-width="5" fill="none" stroke-linecap="round"/><rect x="26" y="27" width="6" height="10" rx="1.5" fill="#F6F4F0"/><path d="M24 14q2-3 0-6M30 16q2-3 0-6" stroke="#F6F4F0" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
-   <span><b>JHMoran</b><small>Plumbing and Heating</small></span>
-  </a>
-  <nav id="nav" aria-label="Main">
-   <ul>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#no-heat">No heat?</a></li>
-    <li><a href="#reviews">Reviews</a></li>
-    <li><a href="#contact">Contact</a></li>
-   </ul>
-  </nav>
-  <a class="btn btn-copper hcall" href="tel:+16314256474">(631) 425-6474</a>
-  <button class="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><svg width="22" height="16" viewBox="0 0 22 16" aria-hidden="true"><path d="M1 2H21M1 8H21M1 14H21" stroke="#0E1B2E" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+<a class="skip" href="#main">Skip to content</a>
+<div class="util"><div class="wrap"><span>233 Nassau Rd, Huntington, NY</span><span class="r"><span class="hide-s">Weekdays · closes at 5 PM</span><a href="tel:+16314256474">(631) 425-6474</a></span></div></div>
+<header class="top" data-header>
+ <div class="bar">
+  <a class="brand" href="#top" aria-label="JHMoran Plumbing and Heating, back to top"><span class="seal" aria-hidden="true">JHM</span><span><b>JHMoran</b><small>Plumbing and Heating</small></span></a>
+  <nav class="main" aria-label="Main" data-nav><a href="#services">Services</a><a href="#no-heat">No heat?</a><a href="#why">Why JHMoran</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+  <button class="menubtn" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu"><span class="bars" aria-hidden="true"></span><span class="mlbl">Menu</span></button>
+  <a class="callblk" href="tel:+16314256474" aria-label="Call Keith at (631) 425-6474"><span class="ic" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg></span><span><small>Call Keith</small><b>(631) 425-6474</b></span></a>
+  <nav id="menu" aria-label="Mobile" data-nav hidden><a href="#services">Services</a><a href="#no-heat">No heat?</a><a href="#why">Why JHMoran</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a class="btn m" href="tel:+16314256474">Call (631) 425-6474</a></nav>
  </div>
 </header>
 
-<main id="top">
-<div class="hero">
- <div class="hero-l">
-  <p class="tagline">Huntington, NY</p>
-  <h1>Boilers, water heaters and the small jobs too.</h1>
-  <p class="lede">JHMoran Plumbing and Heating keeps Huntington homes warm and dry. Keith handles boiler maintenance and repair, hot water heaters, leaks, toilets and shower cartridges, with neat, efficient work.</p>
-  <div class="actions">
-   <a class="btn btn-copper" href="tel:+16314256474">
-    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>
-    Call (631) 425-6474</a>
-   <a class="btn btn-line" href="#no-heat">No heat? Check these first</a>
-  </div>
- </div>
- <div class="hero-r">
-  <svg viewBox="0 0 520 520" role="img" aria-label="Illustration of a home boiler with copper pipes, a pressure gauge, an expansion tank and rising steam">
-   <defs><linearGradient id="cu" x1="0" x2="1"><stop offset="0" stop-color="#8A4718"/><stop offset=".45" stop-color="#E09A62"/><stop offset="1" stop-color="#9A5220"/></linearGradient>
-   <linearGradient id="cuh" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#8A4718"/><stop offset=".45" stop-color="#E09A62"/><stop offset="1" stop-color="#9A5220"/></linearGradient></defs>
-   <g class="steam" fill="none" stroke="#9AA6B5" stroke-width="5" stroke-linecap="round"><path d="M150 70q-14-18 0-34t0-32"/><path d="M186 80q-14-18 0-34t0-32"/><path d="M222 70q-14-18 0-34t0-32"/></g>
-   <rect x="136" y="96" width="22" height="200" fill="url(#cu)"/>
-   <rect x="210" y="96" width="22" height="200" fill="url(#cu)"/>
-   <rect x="136" y="84" width="340" height="22" fill="url(#cuh)"/>
-   <rect x="128" y="80" width="38" height="30" rx="4" fill="#B8692F"/>
-   <rect x="400" y="96" width="22" height="120" fill="url(#cu)"/>
-   <rect x="384" y="216" width="56" height="110" rx="26" fill="#C9CFD7" stroke="#0E1B2E" stroke-width="4"/>
-   <path d="M392 250H432" stroke="#0E1B2E" stroke-width="3"/>
-   <rect x="300" y="72" width="34" height="46" rx="6" fill="#0E1B2E"/><rect x="288" y="62" width="58" height="12" rx="4" fill="#B8692F"/>
-   <rect x="90" y="190" width="280" height="330" rx="14" fill="#fff" stroke="#0E1B2E" stroke-width="5"/>
-   <rect x="90" y="190" width="280" height="56" rx="14" fill="#0E1B2E"/>
-   <rect x="90" y="226" width="280" height="20" fill="#0E1B2E"/>
-   <text x="112" y="225" font-family="Sora,system-ui,sans-serif" font-weight="700" font-size="17" fill="#E09A62" letter-spacing="2">BOILER</text>
-   <circle cx="254" cy="272" r="44" fill="#F6F4F0" stroke="#0E1B2E" stroke-width="5"/>
-   <path d="M222 292a40 40 0 1 1 64 0" fill="none" stroke="#D3CDC3" stroke-width="8"/>
-   <path d="M241 233a40 40 0 0 1 32 4" fill="none" stroke="#3F8A5A" stroke-width="8"/>
-   <g class="needle"><path d="M254 272L254 240" stroke="#A3261A" stroke-width="4" stroke-linecap="round"/></g>
-   <circle cx="254" cy="272" r="6" fill="#0E1B2E"/>
-   <rect x="120" y="340" width="220" height="120" rx="8" fill="#0E1B2E"/>
-   <g fill="#16273F"><rect x="136" y="356" width="188" height="10" rx="3"/><rect x="136" y="374" width="188" height="10" rx="3"/></g>
-   <g class="flame"><path d="M170 446q-8-22 8-38q2 16 10 20q6-14 2-28q22 16 16 46z" fill="#E09A62"/></g>
-   <g class="flame" style="animation-delay:.3s"><path d="M222 446q-8-22 8-38q2 16 10 20q6-14 2-28q22 16 16 46z" fill="#F0B27E"/></g>
-   <g class="flame" style="animation-delay:.6s"><path d="M274 446q-8-22 8-38q2 16 10 20q6-14 2-28q22 16 16 46z" fill="#E09A62"/></g>
-   <rect x="0" y="508" width="520" height="12" fill="#0E1B2E"/>
-  </svg>
- </div>
-</div>
-
-<div class="gauges">
- <div class="wrap g-row" aria-label="Highlights from the Google listing">
-  <div class="g"><svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21" fill="none" stroke="#DCD6CC" stroke-width="5"/><circle cx="24" cy="24" r="21" fill="none" stroke="#B8692F" stroke-width="5" stroke-dasharray="126 132" transform="rotate(-90 24 24)"/></svg><div><b>4.8 on Google</b><span>Average rating</span></div></div>
-  <div class="g"><svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="8" width="36" height="26" rx="4" fill="none" stroke="#0E1B2E" stroke-width="3.5"/><path d="M14 34v8l9-8" fill="#0E1B2E"/><path d="M13 17h22M13 24h14" stroke="#B8692F" stroke-width="3.5" stroke-linecap="round"/></svg><div><b>50 reviews</b><span>On the public Google listing</span></div></div>
-  <div class="g"><svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 44s-14-14-14-25a14 14 0 0 1 28 0c0 11-14 25-14 25z" fill="none" stroke="#0E1B2E" stroke-width="3.5"/><circle cx="24" cy="19" r="5" fill="#B8692F"/></svg><div><b>Huntington</b><span>233 Nassau Rd</span></div></div>
-  <div class="g"><svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="19" fill="none" stroke="#0E1B2E" stroke-width="3.5"/><path d="M24 13v11l7 5" stroke="#B8692F" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg><div><b>Weekdays</b><span>Closes at 5 PM</span></div></div>
- </div>
-</div>
-
-<section id="services">
+<main id="main">
+<section class="hero" id="top" aria-labelledby="h1">
  <div class="wrap">
-  <div class="run-head">
-   <span class="kick">Services</span>
-   <h2 class="h2">One line runs through it.</h2>
-   <p class="intro">From the boiler in the basement to the drip in the upstairs shower. Big repairs and small jobs get the same careful work.</p>
+  <div class="copy">
+   <div class="proof"><span class="g" aria-hidden="true">G</span><span><span class="s" aria-hidden="true">★★★★★</span><small>4.8 from 50 Google reviews</small></span></div>
+   <h1 id="h1">Boilers, Water Heaters And The Small Jobs Too.</h1>
+   <p class="sub">JHMoran Plumbing and Heating keeps Huntington homes warm and dry. Keith handles boiler maintenance and repair, hot water heaters, leaks, toilets and shower cartridges, with neat, efficient work.</p>
+   <div class="acts"><a class="btn" href="tel:+16314256474"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg>Call (631) 425-6474</a><a class="btn m" href="#contact">Request a visit</a></div>
   </div>
-  <ol class="run">
-   <li><span class="fit" aria-hidden="true"></span><div class="card"><h3>Boiler maintenance</h3><p>Regular care so the heat comes on when the cold does.</p></div></li>
-   <li><span class="fit" aria-hidden="true"></span><div class="card"><h3>Boiler repair</h3><p>Finding why the boiler is not heating, and fixing it right.</p></div></li>
-   <li class="hot"><span class="fit" aria-hidden="true"></span><div class="card"><h3>Heat emergencies</h3><p>No heat in winter is urgent. Call first. After-hours availability to confirm with JHMoran.</p></div></li>
-   <li><span class="fit" aria-hidden="true"></span><div class="card"><h3>Hot water heaters</h3><p>Repairs and replacements when the hot water runs cold or the tank leaks.</p></div></li>
-   <li><span class="fit" aria-hidden="true"></span><div class="card"><h3>Leaks</h3><p>Tracking down drips and leaks before they turn into water damage.</p></div></li>
-   <li><span class="fit" aria-hidden="true"></span><div class="card"><h3>Toilets</h3><p>Running, rocking, clogging or leaking toilets put back in order.</p></div></li>
-   <li><span class="fit" aria-hidden="true"></span><div class="card"><h3>Shower cartridges</h3><p>A worn cartridge causes drips and odd temperatures. A swap often fixes both.</p></div></li>
-   <li><span class="fit" aria-hidden="true"></span><div class="card"><h3>Small jobs</h3><p>The little things on your list are welcome, not an afterthought.</p></div></li>
-  </ol>
+  <div class="art">
+   <span class="circ" aria-hidden="true"></span>
+   <div class="ph"><img src="img/hero-boiler-room.jpg" alt="Boiler room with copper and white heating pipes, valves and gauges" fetchpriority="high"></div>
+   <div class="badge" aria-hidden="true"><span class="i"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c3 4 6 6.5 6 11a6 6 0 01-12 0c0-2.4 1.3-4.3 3-6 0 2 1 3 2 3 0-3 1-5 1-8z"/></svg></span><span><b>Boiler care</b><span>Maintenance &amp; repair</span></span></div>
+   <div class="badge badge2" aria-hidden="true"><span class="i"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.7C9 7 6 10 6 14a6 6 0 0012 0c0-4-3-7-6-11.3z"/></svg></span><span><b>Leaks fixed</b><span>Before they do damage</span></span></div>
+  </div>
  </div>
 </section>
 
-<section class="ts" id="no-heat">
- <div class="wrap ts-grid">
+<section class="book" aria-labelledby="bk-h">
+ <div class="wrap">
+  <h2 id="bk-h">Book a Service Visit</h2>
+  <form class="bk" data-quick aria-label="Quick service request">
+   <label class="sr" for="qk-s" hidden>I need help with</label>
+   <select id="qk-s" aria-label="I need help with"><option value="">I need help with...</option><option>No heat</option><option>Boiler maintenance</option><option>Boiler repair</option><option>Hot water heater</option><option>Leak</option><option>Toilet</option><option>Shower cartridge</option><option>Small job</option></select>
+   <input id="qk-z" aria-label="Town or ZIP" placeholder="Town or ZIP" autocomplete="postal-code">
+   <button class="btn m" type="submit">Continue</button>
+  </form>
+  <div class="chips" aria-label="Services"><span>Boilers</span><span>Hot water heaters</span><span>Leaks</span><span>Toilets</span><span>Shower cartridges</span><span>Small jobs</span></div>
+ </div>
+</section>
+
+<section class="intro" aria-labelledby="in-h">
+ <div class="wrap">
+  <p class="eb" data-rv>Plumbing and heating in Huntington</p>
+  <h2 id="in-h" data-rv>One Plumber For <span class="two">The Boiler In The Basement</span> And The Drip Upstairs.</h2>
+  <div data-rv><a class="btn" href="#contact">Contact Keith</a></div>
+  <div class="wide" data-rv><img src="img/pipes-wall.jpg" alt="Gray heating pipes, valves and a pump mounted on a brick wall" loading="lazy"></div>
+ </div>
+</section>
+
+<section class="split" aria-labelledby="sp-h">
+ <div class="wrap">
+  <div class="grid">
+   <div class="ph" data-rv="iris"><img src="img/under-sink.jpg" alt="Plumber tightening a fitting under a bathroom sink" loading="lazy"><p>Big repairs and small jobs get <mark>the same careful work.</mark></p></div>
+   <div>
+    <p class="eb" data-rv>What customers mention</p>
+    <h2 id="sp-h" data-rv>Quick Callbacks, Neat Work, Reasonable Prices</h2>
+    <p class="lead" data-rv>Customers describe Keith as responsive and prompt, with the supplies on hand to fix the problem right away, and work that's done right at a fair price.</p>
+    <ul class="checks">
+     <li data-rv>Quick callbacks</li>
+     <li data-rv>Reasonable pricing</li>
+     <li data-rv>Boiler and leak repair</li>
+    </ul>
+   </div>
+  </div>
+  <div class="cols">
+   <div data-rv><span class="n">01</span><h3>Heat that comes on</h3><p>Regular boiler care so the heat comes on when the cold does.</p></div>
+   <div data-rv><span class="n">02</span><h3>Hot water that stays hot</h3><p>Repairs and replacements when the hot water runs cold or the tank leaks.</p></div>
+   <div data-rv><span class="n">03</span><h3>No job too small</h3><p>Toilets, drips and shower cartridges are welcome, not an afterthought.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="dbanner" aria-labelledby="db-h">
+ <div class="wrap"><div class="box" data-rv>
+  <small>No heat in winter is urgent</small>
+  <h2 id="db-h">Call First. Then Check These Five Things While You Wait.</h2>
+  <div class="acts"><a class="btn m" href="tel:+16314256474">Call (631) 425-6474</a><a class="btn line" href="#no-heat">No-heat checklist</a></div>
+ </div></div>
+</section>
+
+<section class="svc" id="services" aria-labelledby="sv-h">
+ <div class="wrap center">
+  <p class="eb dk" data-rv>Our core services</p>
+  <h2 id="sv-h" data-rv>Heating, Hot Water And Plumbing, One Call</h2>
+  <p class="lead" data-rv>From the boiler in the basement to the drip in the upstairs shower.</p>
+ </div>
+ <div class="wrap">
+  <div class="cards">
+   <article class="card" data-rv><div class="ph"><img src="img/boiler-flame.jpg" alt="Blue gas burner flame" loading="lazy"></div><h3>Heating</h3><p>Finding why the boiler isn't heating, and fixing it right.</p><ul><li>Boiler maintenance</li><li>Boiler repair</li><li>No-heat calls</li></ul></article>
+   <article class="card" data-rv><div class="ph"><img src="img/water-heater.jpg" alt="Hands working on the pipes above a hot water heater" loading="lazy" style="object-position:50% 30%"></div><h3>Hot Water</h3><p>When the hot water runs cold or the tank starts to leak.</p><ul><li>Water heater repair</li><li>Water heater replacement</li><li>Tank leaks</li></ul></article>
+   <article class="card" data-rv><div class="ph"><img src="img/copper-lines.jpg" alt="Rows of bent copper water lines" loading="lazy"></div><h3>Plumbing</h3><p>Tracking down drips before they turn into water damage.</p><ul><li>Leaks</li><li>Toilets</li><li>Shower cartridges</li></ul></article>
+  </div>
+ </div>
+ <div class="slider" data-rv>
+  <div class="strack" data-strack tabindex="0" aria-label="Services, scroll sideways">
+   <a class="tile" href="#contact"><img src="img/old-pipes.jpg" alt="Old heating pipes and valves" loading="lazy"><b>Boiler Repair</b></a>
+   <a class="tile" href="#contact"><img src="img/radiator.jpg" alt="Cast iron radiator in a dark room" loading="lazy"><b>Heat Not Coming On</b></a>
+   <a class="tile" href="#contact"><img src="img/shower-valve.jpg" alt="Chrome shower mixer and hand shower" loading="lazy"><b>Shower Cartridges</b></a>
+   <a class="tile" href="#contact"><img src="img/toilet.jpg" alt="Wall-mounted toilet in a white bathroom" loading="lazy" style="object-position:50% 70%"><b>Toilets</b></a>
+   <a class="tile" href="#contact"><img src="img/tools.jpg" alt="Wrenches laid out in a toolbox" loading="lazy"><b>Small Jobs</b></a>
+  </div>
+  <div class="dots"><button type="button" data-sprev aria-label="Previous services"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button><span class="bar" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><button type="button" data-snext aria-label="Next services"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div>
+ </div>
+</section>
+
+<section class="stats" aria-labelledby="stt-h">
+ <div class="wrap grid">
+  <div class="sgrid">
+   <div data-rv><b>4.8</b><span>Google rating</span></div>
+   <div data-rv><b>50</b><span>Google reviews</span></div>
+   <div data-rv><b>Mon–Fri</b><span>Weekday service, closes at 5 PM</span></div>
+   <div data-rv><b>233</b><span>Nassau Rd, Huntington</span></div>
+  </div>
   <div>
-   <span class="kick">No heat? Check these first</span>
-   <h2 class="h2">Five quick checks before you call.</h2>
-   <p class="intro">Some no-heat calls come down to a dead thermostat battery or a switch someone flipped. Walk through these and you will either fix it or know exactly what to tell Keith.</p>
-   <div class="gas" role="note"><b>Smell gas?</b> Do not check anything. Leave the house now and call your gas utility or 911 from outside.</div>
-   <p class="guidance">General guidance only, not professional advice for your system. Every boiler is different. If anything looks wrong or you are unsure, stop and call. Sample feature in this concept.</p>
-  </div>
-  <div class="panel" aria-live="polite">
-   <div class="track" aria-hidden="true"><span class="on"></span><span></span><span></span><span></span><span></span></div>
-
-   <div class="step active" data-step="1">
-    <div class="ill"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="18" y="14" width="64" height="72" rx="12" fill="#fff" stroke="#0E1B2E" stroke-width="4"/><rect x="28" y="26" width="44" height="26" rx="4" fill="#0E1B2E"/><text x="50" y="45" text-anchor="middle" font-family="Sora,sans-serif" font-weight="700" font-size="16" fill="#E09A62">68</text><circle cx="38" cy="68" r="6" fill="#B8692F"/><circle cx="62" cy="68" r="6" fill="#DCD6CC"/></svg></div>
-    <div><p class="count">Check 1 of 5</p><h3>Thermostat</h3>
-     <ul><li>Is it set to Heat, not Cool or Off?</li><li>Is the set temperature a few degrees above the room?</li><li>Blank screen? Try fresh batteries.</li></ul>
-     <div class="choices"><button class="btn btn-copper" data-fixed>That fixed it</button><button class="btn btn-line" data-next>Still no heat</button></div></div>
-   </div>
-
-   <div class="step" data-step="2">
-    <div class="ill"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="22" y="12" width="56" height="76" rx="6" fill="#fff" stroke="#0E1B2E" stroke-width="4"/><rect x="34" y="26" width="32" height="12" rx="3" fill="#0E1B2E"/><rect x="34" y="44" width="32" height="12" rx="3" fill="#0E1B2E"/><rect x="34" y="62" width="32" height="12" rx="3" fill="#0E1B2E"/><rect x="52" y="46" width="12" height="8" rx="2" fill="#E09A62"/></svg></div>
-    <div><p class="count">Check 2 of 5</p><h3>Breaker and boiler switch</h3>
-     <ul><li>Look for a tripped breaker labeled boiler or burner and reset it once.</li><li>Find the boiler's service switch, often red, near the stairs or boiler. Make sure it is on.</li><li>If the breaker trips again, leave it off and call.</li></ul>
-     <div class="choices"><button class="btn btn-copper" data-fixed>That fixed it</button><button class="btn btn-line" data-next>Still no heat</button></div>
-     <button class="back" data-back>Back</button></div>
-   </div>
-
-   <div class="step" data-step="3">
-    <div class="ill"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="14" y="60" width="72" height="26" rx="4" fill="#0E1B2E"/><path d="M50 58q-14-14 0-34q2 12 8 14q2-8 0-14q14 14 0 34z" fill="#3B82C4"/><path d="M50 58q-6-8 0-16q4 8 0 16z" fill="#BFD8F0"/></svg></div>
-    <div><p class="count">Check 3 of 5</p><h3>Pilot or ignition</h3>
-     <ul><li>If your boiler has a viewing window, is there a flame or a pilot light?</li><li>Some boilers have a reset button. Press it once only. Repeated resets can flood the burner.</li><li>Only relight a pilot if the label on your boiler gives instructions and you are comfortable. Otherwise, call.</li></ul>
-     <div class="choices"><button class="btn btn-copper" data-fixed>That fixed it</button><button class="btn btn-line" data-next>Still no heat</button></div>
-     <button class="back" data-back>Back</button></div>
-   </div>
-
-   <div class="step" data-step="4">
-    <div class="ill"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="52" r="36" fill="#fff" stroke="#0E1B2E" stroke-width="4"/><path d="M26 70a30 30 0 1 1 48 0" fill="none" stroke="#DCD6CC" stroke-width="7"/><path d="M36 30a30 30 0 0 1 22-6" fill="none" stroke="#3F8A5A" stroke-width="7"/><path d="M50 52L42 28" stroke="#A3261A" stroke-width="4" stroke-linecap="round"/><circle cx="50" cy="52" r="5" fill="#0E1B2E"/></svg></div>
-    <div><p class="count">Check 4 of 5</p><h3>Pressure gauge</h3>
-     <ul><li>Hot water boilers have a gauge on the front or on the pipes.</li><li>Note the reading. Many home systems sit somewhere around 12 to 15 psi when cool, but check your boiler's label.</li><li>Very low, or close to 30 psi? Do not adjust it yourself. Call and tell Keith the number.</li></ul>
-     <div class="choices"><button class="btn btn-copper" data-fixed>Looks normal, heat is back</button><button class="btn btn-line" data-next>Still no heat</button></div>
-     <button class="back" data-back>Back</button></div>
-   </div>
-
-   <div class="step" data-step="5">
-    <div class="ill"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="38" y="10" width="24" height="80" rx="6" fill="#fff" stroke="#0E1B2E" stroke-width="4"/><rect x="42" y="50" width="16" height="36" rx="3" fill="#3B82C4"/><path d="M30 50H70" stroke="#B8692F" stroke-width="3" stroke-dasharray="4 3"/></svg></div>
-    <div><p class="count">Check 5 of 5</p><h3>Water level (steam boilers)</h3>
-     <ul><li>Steam boilers have a small glass tube on the side showing the water level.</li><li>It is often around halfway. Empty or full to the top means something needs attention.</li><li>Never add water to a hot boiler that has run dry. Turn it off and call.</li></ul>
-     <div class="choices"><button class="btn btn-copper" data-fixed>That fixed it</button><button class="btn btn-line" data-next>Still no heat</button></div>
-     <button class="back" data-back>Back</button></div>
-   </div>
-
-   <div class="result" id="resCall">
-    <p class="count" style="font-size:14px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--copper-l)">All five checked</p>
-    <h3>Time to call Keith.</h3>
-    <p>You have ruled out the easy stuff, and that helps. When you call, mention what you saw: the thermostat setting, the pressure reading, and whether there was a flame.</p>
-    <div class="actions"><a class="btn btn-copper" href="tel:+16314256474">Call (631) 425-6474</a><a class="btn btn-line" href="#contact">Send a request</a></div>
-    <button class="back" data-restart>Start the checks again</button>
-   </div>
-   <div class="result" id="resFixed">
-    <h3>Heat is back. Nice work.</h3>
-    <p>If the same problem keeps coming back, it is worth having the boiler looked at before the next cold snap.</p>
-    <div class="actions"><a class="btn btn-copper" href="tel:+16314256474">Call to schedule a check</a></div>
-    <button class="back" data-restart>Start the checks again</button>
-   </div>
+   <p class="eb dk" data-rv>Plumbing and heating every weekday</p>
+   <h2 id="stt-h" data-rv>Customers Keep Calling Keith Back, Year After Year</h2>
+   <p class="lead" data-rv>Customers have worked with Keith for years: routine maintenance on gas boilers, new hot water heaters, toilets and shower cartridges, all from the same plumber.</p>
+   <a class="lk" href="#contact" data-rv>Ready to get started? →</a>
+   <h3 data-rv>Based on Nassau Rd in Huntington</h3>
+   <p class="lead" data-rv>233 Nassau Rd, Huntington, NY 11743. Call during the week; the shop closes at 5 PM.</p>
   </div>
  </div>
 </section>
 
-<section id="reviews">
- <div class="wrap rv-grid">
+<section class="nh" id="no-heat" aria-labelledby="nh-h">
+ <div class="wrap grid">
   <div>
-   <span class="kick">Google reviews</span>
-   <figure class="lead-q">
-    <blockquote>Customers keep calling Keith back, year after year.</blockquote>
-    <figcaption>Theme from Google reviews</figcaption>
-   </figure>
-   <div class="keith"><span class="mono" aria-hidden="true">K</span><p>Customers name Keith in their reviews. Call and you talk to the person who does the work.</p></div>
+   <p class="eb" data-rv>No heat? Check these first</p>
+   <h2 id="nh-h" data-rv>Five Quick Checks Before You Call.</h2>
+   <p class="lead" data-rv>Some no-heat calls come down to a dead thermostat battery or a switch someone flipped. Walk through these and you will either fix it or know exactly what to tell Keith.</p>
+   <div class="gas" role="note" data-rv><b>Smell gas?</b> Do not check anything. Leave the house now and call your gas utility or 911 from outside.</div>
+   <p class="fine" data-rv>General guidance only, not professional advice for your system. Every boiler is different. If anything looks wrong or you are unsure, stop and call. Sample feature in this concept.</p>
   </div>
-  <div class="q-list">
-   <figure><blockquote>Neat, efficient work at a fair price.</blockquote><figcaption>Theme from Google reviews</figcaption></figure>
-   <figure><blockquote>Experience that gives people peace of mind.</blockquote><figcaption>Theme from Google reviews</figcaption></figure>
+  <div class="panel" aria-live="polite" data-rv>
+   <div class="bgph" aria-hidden="true"><img src="img/copper-tank.jpg" alt="" loading="lazy"></div>
+   <div class="ptrack" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+   <div data-steps></div>
   </div>
  </div>
 </section>
 
-<section class="contact" id="contact">
- <div class="wrap c-grid">
-  <div class="c-left">
-   <span class="kick">Request service</span>
-   <h2 class="h2">What is going on?</h2>
-   <p class="intro" style="margin-bottom:var(--s5)">A short description helps Keith come prepared.</p>
-   <div class="card-info">
-   <div class="top"><span>Call during business hours</span><a href="tel:+16314256474">(631) 425-6474</a></div>
-   <dl>
-    <div><dt>Address</dt><dd>233 Nassau Rd<br>Huntington, NY 11743</dd></div>
-    <div><dt>Hours</dt><dd>Monday to Friday, closes 5 PM</dd><dd class="small">Opening time, weekend and after-hours availability to confirm.</dd></div>
-    <div><dt>Services</dt><dd>Boilers, water heaters, leaks, toilets, shower cartridges, small jobs</dd></div>
-   </dl>
-  </div>
-  </div>
-  <div class="c-right">
-   <form class="demo" data-done="doneReq" novalidate>
-    <div class="fgrid">
-     <div class="field"><label for="r-name">Name</label><input type="text" id="r-name" autocomplete="name" required><span class="err-msg">Please add your name.</span></div>
-     <div class="field"><label for="r-phone">Phone</label><input type="tel" id="r-phone" autocomplete="tel" required><span class="err-msg">Please add a phone number.</span></div>
-     <div class="field full"><label for="r-addr">Street and town</label><input type="text" id="r-addr" autocomplete="street-address" required><span class="err-msg">Please add an address.</span></div>
-     <div class="field full"><label for="r-issue">Issue</label><select id="r-issue" required><option value="">Choose one</option><option>No heat</option><option>Boiler maintenance</option><option>Boiler repair</option><option>Hot water heater</option><option>Leak</option><option>Toilet</option><option>Shower cartridge</option><option>Small job</option></select><span class="err-msg">Please choose an issue.</span></div>
-     <div class="field full"><fieldset><legend>How soon?</legend>
-      <div class="radios"><label><input type="radio" name="when" value="asap" checked> Right away</label><label><input type="radio" name="when" value="week"> This week</label><label><input type="radio" name="when" value="plan"> Planning ahead</label></div></fieldset></div>
-     <div class="field full"><label for="r-msg">Details</label><textarea id="r-msg" placeholder="What you noticed, pressure reading, how long it has been happening..."></textarea></div>
-    </div>
-    <button class="btn btn-navy" type="submit" style="margin-top:var(--s4)">Send request</button>
-    <p class="demo-note">Demo form. This is a website concept. Nothing is sent or saved.</p>
-   </form>
-   <div class="done" id="doneReq" hidden tabindex="-1">
-    <h3>Demo complete.</h3>
-    <p>This is a website concept, so nothing was sent or saved. For a real no-heat problem, call (631) 425-6474.</p>
-    <button class="btn btn-navy start-over" type="button">Start over</button>
+<section class="why" id="why" aria-labelledby="wy-h">
+ <div class="wrap">
+  <div class="center"><p class="eb dk" data-rv>Why choose JHMoran</p><h2 id="wy-h" data-rv>A Huntington Plumber You Can Count On</h2><p class="lead" data-rv>Whether it's a boiler that won't fire or a toilet that won't stop running, the job gets done right, with clear communication and fair pricing.</p></div>
+  <div class="grid">
+   <div class="ph" data-rv="iris"><img src="img/bathroom-plumber.jpg" alt="Plumber with a toolbox working in a bathroom" loading="lazy"></div>
+   <div class="tiles">
+    <div class="t" data-rv><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg><h3>Responsive</h3><p>Quick callbacks and timely visits, mentioned again and again in reviews.</p></div>
+    <div class="t" data-rv><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5c-.5-1-1.5-1.5-2.5-1.5-1.5 0-2.5.8-2.5 2s1 1.6 2.5 2 2.5.9 2.5 2-1 2-2.5 2c-1.1 0-2-.5-2.5-1.5M12 6v2M12 16v2"/></svg><h3>Reasonable pricing</h3><p>The most-mentioned topic in Google reviews.</p></div>
+    <div class="t" data-rv><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M14.7 6.3a4 4 0 015 5L12 19l-5-5 7.7-7.7z"/><path d="M7 14l-4 4 3 3 4-4"/></svg><h3>Neat, efficient work</h3><p>Supplies on hand and the problem fixed right away.</p></div>
+    <div class="t" data-rv><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg><h3>Small jobs welcome</h3><p>The little things on your list get the same care.</p></div>
    </div>
   </div>
+ </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="row"><span>boilers</span><i>✱</i><span>hot water heaters</span><i>✱</i><span>leaks</span><i>✱</i><span>toilets</span><i>✱</i><span>shower cartridges</span><i>✱</i><span>small jobs</span><i>✱</i><span>Huntington</span><i>✱</i></div><div class="row"><span>boilers</span><i>✱</i><span>hot water heaters</span><i>✱</i><span>leaks</span><i>✱</i><span>toilets</span><i>✱</i><span>shower cartridges</span><i>✱</i><span>small jobs</span><i>✱</i><span>Huntington</span><i>✱</i></div></div>
+
+<section class="rv" id="reviews" aria-labelledby="rv-h">
+ <div class="wrap">
+  <div class="center"><p class="eb dk" data-rv>Testimonials</p><h2 id="rv-h" data-rv>Trusted By Huntington Homeowners</h2>
+   <div class="topics" data-rv><span>Reasonable pricing</span><span>Leak repair</span><span>Boiler repair</span><span>Quick callbacks</span></div></div>
+  <div class="rvg">
+   <article class="rvc" data-rv><div class="top"><span class="s" aria-label="5 stars">★★★★★</span><span class="g" aria-hidden="true">G</span></div><blockquote>“We’ve been working with Keith for years now for all of our plumbing needs. He performs routine maintenance on our gas boiler, and has also installed a new hot water heater, toilet bowl and shower cartridge for us.”</blockquote><div class="who"><i aria-hidden="true">J</i><span><b>Joe C.</b> · Google review</span></div></article>
+   <article class="rvc" data-rv><div class="top"><span class="s" aria-label="5 stars">★★★★★</span><span class="g" aria-hidden="true">G</span></div><blockquote>“Keith provided excellent service. He was readily available, prompt, had good communication, and had the necessary supplies on hand and fixed the problem right away.”</blockquote><div class="who"><i aria-hidden="true">E</i><span><b>Elizabeth H.</b> · Google review</span></div></article>
+   <article class="rvc" data-rv><div class="top"><span class="s" aria-label="5 stars">★★★★★</span><span class="g" aria-hidden="true">G</span></div><blockquote>“I’m a new homeowner and have used Keith on multiple occasions since we moved in. Since the beginning, he has been very responsive and makes sure he gets to the house in a timely manor. He does great work, is very reasonable…”</blockquote><div class="who"><i aria-hidden="true">B</i><span><b>Brian M.</b> · Google review</span></div></article>
+  </div>
+  <div class="more" data-rv><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=JHMoran+Plumbing+and+Heating+233+Nassau+Rd+Huntington+NY" target="_blank" rel="noopener">Read all 50 reviews on Google</a></div>
+ </div>
+</section>
+
+<section class="faq" id="faq" aria-labelledby="fq-h">
+ <div class="wrap grid">
+  <div data-rv><p class="eb dk">Need help at home?</p><h2 id="fq-h">Common Questions Answered</h2><p class="lead">Quick answers about the work, the area and how to reach Keith.</p><div class="ask"><b>Still have a question?</b><span>Call Keith during the week and describe what's going on.</span><a class="btn w" href="tel:+16314256474">Call (631) 425-6474</a></div></div>
+  <div data-acc data-rv>
+   <div class="qa"><button type="button" aria-expanded="true" aria-controls="q1">What does JHMoran work on?<i aria-hidden="true">+</i></button><div class="a" id="q1">Boiler maintenance and repair, hot water heaters, leaks, toilets and shower cartridges, plus the small plumbing jobs on your list.</div></div>
+   <div class="qa"><button type="button" aria-expanded="false" aria-controls="q2">What should I do if I have no heat?<i aria-hidden="true">+</i></button><div class="a" id="q2" hidden>Call first. While you wait, the no-heat checklist on this page covers the thermostat, breaker, ignition, pressure and water level. If you smell gas, leave the house and call your gas utility or 911 from outside.</div></div>
+   <div class="qa"><button type="button" aria-expanded="false" aria-controls="q3">Where is JHMoran based?<i aria-hidden="true">+</i></button><div class="a" id="q3" hidden>233 Nassau Rd in Huntington, NY 11743.</div></div>
+   <div class="qa"><button type="button" aria-expanded="false" aria-controls="q4">When can I reach Keith?<i aria-hidden="true">+</i></button><div class="a" id="q4" hidden>Weekdays, closing at 5 PM. Call (631) 425-6474. After-hours availability is something to confirm with JHMoran directly.</div></div>
+   <div class="qa"><button type="button" aria-expanded="false" aria-controls="q5">Do you take small jobs?<i aria-hidden="true">+</i></button><div class="a" id="q5" hidden>Yes. A dripping shower, a running toilet or a slow leak gets the same careful work as a boiler repair.</div></div>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="ct-h">
+ <div class="ph"><img src="img/radiator-light.jpg" alt="White radiator under a sunny window" loading="lazy">
+  <div class="info"><b>JHMoran Plumbing and Heating</b><span>233 Nassau Rd, Huntington, NY 11743</span><a href="tel:+16314256474"><b>(631) 425-6474</b></a><span>Weekdays · closes at 5 PM</span></div></div>
+ <div class="fm">
+  <p class="eb dk">Contact</p>
+  <h2 id="ct-h">Have a Problem? Tell Keith About It.</h2>
+  <form data-preview aria-labelledby="ct-h">
+   <div class="fr"><div class="f"><label for="n">Name</label><input id="n" name="name" autocomplete="name"></div><div class="f"><label for="p">Phone</label><input id="p" name="phone" type="tel" autocomplete="tel" inputmode="tel"></div></div>
+   <div class="fr"><div class="f"><label for="s">Issue</label><select id="s" name="issue"><option>No heat</option><option>Boiler maintenance</option><option>Boiler repair</option><option>Hot water heater</option><option>Leak</option><option>Toilet</option><option>Shower cartridge</option><option>Small job</option></select></div><div class="f"><label for="z">Town or ZIP</label><input id="z" name="town" autocomplete="postal-code"></div></div>
+   <div class="f"><label for="m">Details <em>(optional)</em></label><textarea id="m" name="message" placeholder="What's happening, and since when"></textarea></div>
+   <p class="req">Required: your name and a phone number.</p>
+   <p class="err" data-err role="alert" hidden></p>
+   <button class="btn m" type="submit">Send request</button>
+   <p class="ok" data-ok tabindex="-1" role="status" hidden>Thanks<span data-name></span>. This is a sample website, so nothing was sent. On the real site this request would go straight to JHMoran. For now, call (631) 425-6474.</p>
+  </form>
  </div>
 </section>
 </main>
 
 <footer>
- <div class="wrap">
-  <div class="f-grid">
-   <div><h3>JHMoran Plumbing and Heating</h3><p>Boiler maintenance and repair, hot water heaters, leaks, toilets, shower cartridges, small jobs and heat emergencies.</p></div>
-   <div><h3>Contact</h3><p><a href="tel:+16314256474">(631) 425-6474</a><br>233 Nassau Rd<br>Huntington, NY 11743</p></div>
-   <div><h3>Hours</h3><p>Monday to Friday, closes 5 PM</p></div>
-  </div>
-  <p class="disclaimer">Independent website concept designed by Lisette Colon. Not affiliated with or approved by JHMoran Plumbing and Heating. Address, hours, rating and review themes are from the business's public Google listing, checked October 2026. Short service descriptions are written for this concept, service list to confirm with the owner. Drawings are illustrations. The "No heat? Check these first" flow is general guidance, not professional advice, and a sample feature. The request form is a demo; nothing is sent or saved.</p>
+ <div class="wrap grid">
+  <div><span class="seal" aria-hidden="true">JHM</span><p>JHMoran Plumbing and Heating keeps Huntington homes warm and dry, from boilers to the small jobs.</p></div>
+  <div><h4>Contact</h4><ul><li><a href="tel:+16314256474">(631) 425-6474</a></li><li>233 Nassau Rd, Huntington, NY 11743</li><li>Weekdays · closes at 5 PM</li></ul></div>
+  <div><h4>Links</h4><ul><li><a href="#services">Services</a></li><li><a href="#no-heat">No heat?</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#contact">Contact</a></li></ul></div>
+  <div><h4>Services</h4><ul><li>Boilers</li><li>Hot water heaters</li><li>Leaks &amp; toilets</li><li>Shower cartridges</li></ul></div>
  </div>
+ <div class="wrap bot"><span>© 2026 JHMoran Plumbing and Heating.</span><a href="#top">Back to top ↑</a></div>
 </footer>
-<a class="btn btn-copper sticky-call" href="tel:+16314256474">Call (631) 425-6474</a>
-
+<div class="mbar" aria-label="Quick contact"><a class="c" href="tel:+16314256474">Call</a><a class="e" href="#contact">Request a visit</a></div>
+<p class="concept-note">Website concept — preview for review.</p>
 <script>
 (function(){
- var btn=document.querySelector('.menu-btn'),nav=document.getElementById('nav');
- btn.addEventListener('click',function(){var o=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!o));btn.setAttribute('aria-label',o?'Open menu':'Close menu');nav.classList.toggle('open',!o)});
- nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){btn.setAttribute('aria-expanded','false');nav.classList.remove('open')})});
-
- var panel=document.querySelector('.panel'),steps=panel.querySelectorAll('.step'),bars=panel.querySelectorAll('.track span'),cur=1;
- function show(n){cur=n;steps.forEach(function(s){s.classList.toggle('active',+s.dataset.step===n)});
-  panel.querySelectorAll('.result').forEach(function(r){r.classList.remove('active')});
-  bars.forEach(function(b,i){b.classList.toggle('on',i<n)});
-  var h=panel.querySelector('.step.active h3');if(h){h.setAttribute('tabindex','-1');h.focus({preventScroll:true})}}
- function result(id){steps.forEach(function(s){s.classList.remove('active')});var r=document.getElementById(id);r.classList.add('active');
-  bars.forEach(function(b){b.classList.add('on')});var h=r.querySelector('h3');h.setAttribute('tabindex','-1');h.focus({preventScroll:true})}
- panel.addEventListener('click',function(e){var t=e.target.closest('button');if(!t)return;
-  if(t.hasAttribute('data-next')){cur<5?show(cur+1):result('resCall')}
-  else if(t.hasAttribute('data-fixed')){result('resFixed')}
-  else if(t.hasAttribute('data-back')){show(Math.max(1,cur-1))}
-  else if(t.hasAttribute('data-restart')){show(1)}});
-
- document.querySelectorAll('form.demo').forEach(function(f){
-  var done=document.getElementById(f.dataset.done);
-  f.addEventListener('submit',function(e){e.preventDefault();var first=null;
-   f.querySelectorAll('[required]').forEach(function(i){var ok=i.value.trim()!=='';i.closest('.field').classList.toggle('err',!ok);i.setAttribute('aria-invalid',String(!ok));if(!ok&&!first)first=i});
-   if(first){first.focus();return}
-   f.hidden=true;done.hidden=false;done.focus()});
-  done.querySelector('.start-over').addEventListener('click',function(){f.reset();f.querySelectorAll('.err').forEach(function(x){x.classList.remove('err')});done.hidden=true;f.hidden=false;f.querySelector('input').focus()});
- });
+ // no-heat checklist
+ var S=[['Thermostat',['Is it set to Heat, not Cool or Off?','Is the set temperature a few degrees above the room?','Blank screen? Try fresh batteries.'],'That fixed it'],
+  ['Breaker and boiler switch',['Look for a tripped breaker labeled boiler or burner and reset it once.','Find the boiler\'s service switch, often red, near the stairs or boiler. Make sure it is on.','If the breaker trips again, leave it off and call.'],'That fixed it'],
+  ['Pilot or ignition',['If your boiler has a viewing window, is there a flame or a pilot light?','Some boilers have a reset button. Press it once only. Repeated resets can flood the burner.','Only relight a pilot if the label on your boiler gives instructions and you are comfortable. Otherwise, call.'],'That fixed it'],
+  ['Pressure gauge',['Hot water boilers have a gauge on the front or on the pipes.','Note the reading. Many home systems sit somewhere around 12 to 15 psi when cool, but check your boiler\'s label.','Very low, or close to 30 psi? Do not adjust it yourself. Call and tell Keith the number.'],'Looks normal, heat is back'],
+  ['Water level (steam boilers)',['Steam boilers have a small glass tube on the side showing the water level.','It is often around halfway. Empty or full to the top means something needs attention.','Never add water to a hot boiler that has run dry. Turn it off and call.'],'That fixed it']];
+ var box=document.querySelector('[data-steps]'),bars=[].slice.call(document.querySelectorAll('.ptrack i'));
+ var esc=function(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;')};
+ var show=function(i,focus){bars.forEach(function(b,j){b.classList.toggle('on',j<=i&&i<S.length)});
+  if(i==='fixed'){box.innerHTML='<div class="step step-in"><p class="count">Good news</p><h3 tabindex="-1">Heat is back.</h3><ul><li>If it stops again, or anything looked wrong, call Keith and describe what you saw.</li></ul><div class="choices"><a class="btn m" href="tel:+16314256474">Call (631) 425-6474</a><button class="btn line" type="button" data-restart>Start over</button></div></div>'}
+  else if(i>=S.length){box.innerHTML='<div class="step step-in"><p class="count">Still no heat</p><h3 tabindex="-1">Time to call Keith.</h3><ul><li>Tell him which checks you did and anything you noticed, like the pressure reading.</li></ul><div class="choices"><a class="btn m" href="tel:+16314256474">Call (631) 425-6474</a><a class="btn line" href="#contact">Send a request</a></div><button class="back" type="button" data-restart>Start over</button></div>'}
+  else{var s=S[i];box.innerHTML='<div class="step step-in"><p class="count">Check '+(i+1)+' of 5</p><h3 tabindex="-1">'+esc(s[0])+'</h3><ul>'+s[1].map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul><div class="choices"><button class="btn w" type="button" data-fixed>'+esc(s[2])+'</button><button class="btn line" type="button" data-next>Still no heat</button></div>'+(i?'<button class="back" type="button" data-back>Back</button>':'')+'</div>'}
+  box.setAttribute('data-i',i);if(focus){var h=box.querySelector('h3');if(h)h.focus({preventScroll:true})}};
+ box.addEventListener('click',function(e){var t=e.target.closest('button');if(!t)return;var i=+box.getAttribute('data-i')||0;
+  if(t.hasAttribute('data-next'))show(i+1,1);else if(t.hasAttribute('data-back'))show(i-1,1);else if(t.hasAttribute('data-fixed'))show('fixed',1);else if(t.hasAttribute('data-restart'))show(0,1)});
+ show(0);
+ // service slider
+ var tr=document.querySelector('[data-strack]'),dots=[].slice.call(document.querySelectorAll('.dots .bar i'));
+ var mv=function(d){var c=tr.children[0];tr.scrollBy({left:d*(c.getBoundingClientRect().width+12),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})};
+ document.querySelector('[data-sprev]').addEventListener('click',function(){mv(-1)});document.querySelector('[data-snext]').addEventListener('click',function(){mv(1)});
+ tr.addEventListener('scroll',function(){var c=tr.children[0].getBoundingClientRect().width+12,i=Math.round(tr.scrollLeft/c);dots.forEach(function(d,j){d.classList.toggle('on',j===Math.min(i,dots.length-1))})},{passive:true});
+ // quick request -> contact form
+ var q=document.querySelector('[data-quick]');q.addEventListener('submit',function(e){e.preventDefault();var v=document.getElementById('qk-s').value,z=document.getElementById('qk-z').value;
+  if(v)document.getElementById('s').value=v;if(z)document.getElementById('z').value=z;document.getElementById('contact').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});setTimeout(function(){document.getElementById('n').focus({preventScroll:true})},600)});
+ // mobile bar
+ var bar=document.querySelector('.mbar'),ct=document.getElementById('contact');if(bar&&ct&&'IntersectionObserver' in window){new IntersectionObserver(function(e){bar.classList.toggle('hide',e[0].isIntersecting)},{threshold:.2}).observe(ct)}
 })();
 </script>
+<script src="common.js?v=3"></script>
 </body>
 </html>
