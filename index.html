@@ -145,7 +145,7 @@ nav.main a:hover::after,nav.main a[aria-current]::after{transform:scaleX(1)}
 .card li{font-size:13px;color:#4A4A4E;display:flex;gap:8px;align-items:center}
 .card li::before{content:"✓";color:var(--ink);font-weight:700;font-size:12px}
 .slider{margin-top:50px;position:relative}
-.strack{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 36px)/3.3);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-left:max(20px,calc((100vw - var(--wrap))/2 - 60px))}
+.strack{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 24px)/3);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;scroll-behavior:smooth;overscroll-behavior-x:contain;padding:0;margin:0}
 .strack::-webkit-scrollbar{display:none}
 .tile{position:relative;scroll-snap-align:start;aspect-ratio:1/0.96;border-radius:6px;overflow:hidden;color:#fff;text-decoration:none}
 .tile img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
@@ -154,7 +154,9 @@ nav.main a:hover::after,nav.main a[aria-current]::after{transform:scaleX(1)}
 .tile b{position:absolute;left:18px;bottom:16px;z-index:1;font:600 20px 'Hanken Grotesk',sans-serif}
 .dots{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:20px}
 .dots button{width:36px;height:36px;border-radius:50%;border:0;background:var(--m);color:#fff;display:grid;place-items:center;cursor:pointer}
-.dots .bar{display:flex;gap:6px}.dots .bar i{width:18px;height:3px;border-radius:2px;background:#E8C9CB}.dots .bar i.on{background:var(--m);width:30px}
+.dots button:disabled{opacity:.3;cursor:default}
+.dots .bar{display:flex;gap:6px;align-items:center}.dots .bar button{width:18px;height:20px;border-radius:0;background:none;padding:0;display:flex;align-items:center}.dots .bar button::before{content:"";display:block;width:100%;height:3px;border-radius:2px;background:#E8C9CB;transition:background .3s}.dots .bar button[aria-current="true"]{width:32px}.dots .bar button[aria-current="true"]::before{background:var(--m)}
+.scount{font-size:13px;color:#6B6B70;text-align:center;margin-top:8px}
 
 /* stats */
 .stats{background:var(--paper);padding-block:80px}
@@ -303,7 +305,7 @@ footer .bot a{color:#A9A9AD;text-decoration:none}
  .hero .art{justify-self:center;width:min(100%,440px);margin-bottom:-20px}
  .split .grid,.stats .grid,.nh .grid,.faq .grid{grid-template-columns:1fr;gap:40px}
  .cards{grid-template-columns:1fr 1fr}
- .strack{grid-auto-columns:42%}
+ .strack{grid-auto-columns:calc((100% - 12px)/2)}
  .why .grid{grid-template-columns:1fr}
  .rvg{grid-template-columns:1fr 1fr}
  .contact{grid-template-columns:1fr}.contact .ph{min-height:360px}
@@ -320,7 +322,7 @@ footer .bot a{color:#A9A9AD;text-decoration:none}
  .intro,.split,.why,.rv,.nh,.stats{padding-block:64px}
  .cols{grid-template-columns:1fr;gap:22px;margin-top:44px}
  .cards,.rvg{grid-template-columns:1fr}
- .strack{grid-auto-columns:76%}
+ .strack{grid-auto-columns:84%}
  .why .tiles{grid-template-columns:1fr 1fr}
  .why .ph{min-height:280px}
  .panel{padding:22px 18px}
@@ -431,15 +433,15 @@ footer .bot a{color:#A9A9AD;text-decoration:none}
    <article class="card" data-rv><div class="ph"><img src="img/copper-lines.jpg" alt="Rows of bent copper water lines" loading="lazy"></div><h3>Plumbing</h3><p>Tracking down drips before they turn into water damage.</p><ul><li>Leaks</li><li>Toilets</li><li>Shower cartridges</li></ul></article>
   </div>
  </div>
- <div class="slider" data-rv>
-  <div class="strack" data-strack tabindex="0" aria-label="Services, scroll sideways">
+ <div class="wrap slider" data-rv>
+  <div class="strack" data-strack tabindex="0" role="region" aria-label="More services, use the arrows or scroll sideways">
    <a class="tile" href="#contact"><img src="img/old-pipes.jpg" alt="Old heating pipes and valves" loading="lazy"><b>Boiler Repair</b></a>
    <a class="tile" href="#contact"><img src="img/radiator.jpg" alt="Cast iron radiator in a dark room" loading="lazy"><b>Heat Not Coming On</b></a>
    <a class="tile" href="#contact"><img src="img/shower-valve.jpg" alt="Chrome shower mixer and hand shower" loading="lazy"><b>Shower Cartridges</b></a>
    <a class="tile" href="#contact"><img src="img/toilet.jpg" alt="Wall-mounted toilet in a white bathroom" loading="lazy" style="object-position:50% 70%"><b>Toilets</b></a>
    <a class="tile" href="#contact"><img src="img/tools.jpg" alt="Wrenches laid out in a toolbox" loading="lazy"><b>Small Jobs</b></a>
   </div>
-  <div class="dots"><button type="button" data-sprev aria-label="Previous services"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button><span class="bar" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><button type="button" data-snext aria-label="Next services"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div>
+  <div class="dots"><button type="button" data-sprev aria-label="Previous services"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button><span class="bar" data-sdots></span><button type="button" data-snext aria-label="Next services"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div>
  </div>
 </section>
 
@@ -571,10 +573,18 @@ footer .bot a{color:#A9A9AD;text-decoration:none}
   if(t.hasAttribute('data-next'))show(i+1,1);else if(t.hasAttribute('data-back'))show(i-1,1);else if(t.hasAttribute('data-fixed'))show('fixed',1);else if(t.hasAttribute('data-restart'))show(0,1)});
  show(0);
  // service slider
- var tr=document.querySelector('[data-strack]'),dots=[].slice.call(document.querySelectorAll('.dots .bar i'));
- var mv=function(d){var c=tr.children[0];tr.scrollBy({left:d*(c.getBoundingClientRect().width+12),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})};
- document.querySelector('[data-sprev]').addEventListener('click',function(){mv(-1)});document.querySelector('[data-snext]').addEventListener('click',function(){mv(1)});
- tr.addEventListener('scroll',function(){var c=tr.children[0].getBoundingClientRect().width+12,i=Math.round(tr.scrollLeft/c);dots.forEach(function(d,j){d.classList.toggle('on',j===Math.min(i,dots.length-1))})},{passive:true});
+ (function(){var tr=document.querySelector('[data-strack]'),tiles=[].slice.call(tr.children),pv=document.querySelector('[data-sprev]'),nx=document.querySelector('[data-snext]'),dw=document.querySelector('[data-sdots]');
+  var step=function(){return tiles[1].offsetLeft-tiles[0].offsetLeft};
+  var per=function(){return Math.max(1,Math.round((tr.clientWidth+12)/step()))};
+  var pages=function(){return Math.max(1,tiles.length-per()+1)};
+  var cur=function(){var mx=tr.scrollWidth-tr.clientWidth;if(tr.scrollLeft>=mx-2)return pages()-1;return Math.round(tr.scrollLeft/step())};
+  var go=function(i){i=Math.max(0,Math.min(pages()-1,i));tr.scrollTo({left:i*step(),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})};
+  var sync=function(){var i=cur(),n=pages();pv.disabled=i<=0;nx.disabled=i>=n-1;[].slice.call(dw.children).forEach(function(d,j){d.setAttribute('aria-current',String(j===i))})};
+  var build=function(){dw.innerHTML='';for(var i=0;i<pages();i++){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Show services from '+(i+1));(function(k){b.addEventListener('click',function(){go(k)})})(i);dw.appendChild(b)}sync()};
+  pv.addEventListener('click',function(){go(cur()-1)});nx.addEventListener('click',function(){go(cur()+1)});
+  var t=0;tr.addEventListener('scroll',function(){if(!t){t=1;requestAnimationFrame(function(){t=0;sync()})}},{passive:true});
+  tr.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){e.preventDefault();go(cur()+1)}if(e.key==='ArrowLeft'){e.preventDefault();go(cur()-1)}});
+  addEventListener('resize',build);build()})();
  // quick request -> contact form
  var q=document.querySelector('[data-quick]');q.addEventListener('submit',function(e){e.preventDefault();var v=document.getElementById('qk-s').value,z=document.getElementById('qk-z').value;
   if(v)document.getElementById('s').value=v;if(z)document.getElementById('z').value=z;document.getElementById('contact').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});setTimeout(function(){document.getElementById('n').focus({preventScroll:true})},600)});
